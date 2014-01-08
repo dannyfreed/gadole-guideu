@@ -1,0 +1,603 @@
+<!DOCTYPE HTML>
+<head>
+<title>Book your session</title>
+<link rel="stylesheet" href="booking.css" type="text/css" />
+<link rel="stylesheet" href="bootstrap.css" type="text/css" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script type="text/javascript" src="//use.typekit.net/xfb1bml.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"> <!--icon typeface-->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+
+</head>
+
+<body>
+	<header>
+		<nav class="navbar navbar-static-top" role="navigation">
+			<a style="color:white" class="navbar-brand" href="#">
+				<img src="assets/logo.png" />
+			</a>
+		<span>
+		<form class="search-form form-inline" role="form">
+			<div class="form-group">
+	  			<input type="text" class="tk-proxima-nova search-field" placeholder="Search by tutor, subject, or course">
+	  		</div>
+	  	</form>
+	  	</span>
+			<span class="tk-proxima-nova signup-login">
+				<a href="#" id="signup">Signup</a>
+				<a href="#" id="login">Login</a>
+			</span>
+		</nav>
+	</header>
+	<section class="title">
+		<h1 class="tk-proxima-nova">Book Your Session</h1>
+	</section>
+	<section class="booking-console">
+		<form action="#" method="post">
+		<div class="form-group">
+			<label for="select-date" class="tk-proxima-nova">Select a date</label><input type="date" id="select-date" name="select-date">
+		</div>
+				<div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 date date1">
+					<h2 class="tk-proxima-nova">Sat, Jan 4</h2>
+					<div class="morning-time-slots time-slots">
+						<a class="back" href="#">Back</a>
+						<div class="times-wrapper morning">
+						<h3 class="tk-proxima-nova"><i class="fa fa-caret-down"></i>Morning</h3>
+						<h6 class="tk-proxima-nova num-available">10 available</h6> <!--print amount of timeslots available for specific tutor & specific time of day (morning, afternoon, evening)-->
+							<ul class="morning-times times">
+								<li class="time">
+									<a href="#"><span class="time-name">9:45 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">10:00 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">10:15 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">10:30 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">10:45 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">11:00 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">11:15 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">11:30 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">11:45 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">12:00 PM</span></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="afternoon-time-slots time-slots">
+						<a class="back" href="#">Back</a>
+						<div class="times-wrapper afternoon">
+						<h3 class="tk-proxima-nova"><i class="fa fa-caret-down"></i>Afternoon</h3>
+						<h6 class="tk-proxima-nova num-available">5 available</h6> <!--print amount of timeslots available for specific tutor & specific time of day (morning, afternoon, evening)-->
+							<ul class="afternoon-times times">
+								<li class="time">
+									<a href="#"><span class="time-name">12:30 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">12:45 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">1:00 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">1:15 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">1:30 PM</span></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="evening-time-slots time-slots">
+						<a class="back" href="#">Back</a>
+						<div class="times-wrapper evening">
+						<h3 class="tk-proxima-nova"><i class="fa fa-caret-down"></i>Evening</h3>
+						<h6 class="tk-proxima-nova num-available">12 available</h6> <!--print amount of timeslots available for specific tutor & specific time of day (morning, afternoon, evening)-->
+							<ul class="evening-times times">
+								<li class="time">
+									<a href="#"><span class="time-name">4:45 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">5:00 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">5:15 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">5:30 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">5:45 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">6:00 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">6:15 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">6:30 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">6:45 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">7:00 PM</span></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="timepicker morning-box">
+						<h3 class="tk-proxima-nova"><i class="fa fa-caret-right"></i>Morning</h3>
+						<h6 class="tk-proxima-nova num-available">10 available</h6> <!--print amount of timeslots available for specific tutor & specific time of day (morning, afternoon, evening)-->
+					</div>
+					<div class="timepicker afternoon-box">
+						<h3 class="tk-proxima-nova"><i class="fa fa-caret-right"></i>Afternoon</h3>
+						<h6 class="tk-proxima-nova num-available">5 available</h6> <!--print amount of timeslots available for specific tutor & specific time of day (morning, afternoon, evening)-->
+					</div>
+					<div class="timepicker evening-box">
+						<h3 class="tk-proxima-nova"><i class="fa fa-caret-right"></i></i>Evening</h3>
+						<h6 class="tk-proxima-nova num-available">12 available</h6> <!--print amount of timeslots available for specific tutor & specific time of day (morning, afternoon, evening)-->
+					</div>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 date date2">
+					<h2 class="tk-proxima-nova">Sun, Jan 5</h2>
+					<div class="morning-time-slots time-slots">
+						<a class="back" href="#">Back</a>
+						<div class="times-wrapper morning">
+						<h3 class="tk-proxima-nova"><i class="fa fa-caret-down"></i>Morning</h3>
+						<h6 class="tk-proxima-nova num-available">10 available</h6> <!--print amount of timeslots available for specific tutor & specific time of day (morning, afternoon, evening)-->
+							<ul class="morning-times times">
+								<li class="time">
+									<a href="#"><span class="time-name">9:45 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">10:00 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">10:15 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">10:30 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">10:45 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">11:00 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">11:15 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">11:30 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">11:45 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">12:00 PM</span></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="afternoon-time-slots time-slots">
+						<a class="back" href="#">Back</a>
+						<div class="times-wrapper afternoon">
+						<h3 class="tk-proxima-nova"><i class="fa fa-caret-down"></i>Afternoon</h3>
+						<h6 class="tk-proxima-nova num-available">5 available</h6> <!--print amount of timeslots available for specific tutor & specific time of day (morning, afternoon, evening)-->
+							<ul class="afternoon-times times">
+								<li class="time">
+									<a href="#"><span class="time-name">12:30 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">12:45 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">1:00 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">1:15 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">1:30 PM</span></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="evening-time-slots time-slots">
+						<a class="back" href="#">Back</a>
+						<div class="times-wrapper evening">
+						<h3 class="tk-proxima-nova"><i class="fa fa-caret-down"></i>Evening</h3>
+						<h6 class="tk-proxima-nova num-available">12 available</h6> <!--print amount of timeslots available for specific tutor & specific time of day (morning, afternoon, evening)-->
+							<ul class="evening-times times">
+								<li class="time">
+									<a href="#"><span class="time-name">4:45 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">5:00 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">5:15 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">5:30 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">5:45 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">6:00 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">6:15 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">6:30 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">6:45 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">7:00 PM</span></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="timepicker morning-box">
+						<h3 class="tk-proxima-nova"><i class="fa fa-caret-right"></i>Morning</h3>
+						<h6 class="tk-proxima-nova num-available">10 available</h6> <!--print amount of timeslots available for specific tutor & specific time of day (morning, afternoon, evening)-->
+					</div>
+					<div class="timepicker afternoon-box">
+						<h3 class="tk-proxima-nova"><i class="fa fa-caret-right"></i>Afternoon</h3>
+						<h6 class="tk-proxima-nova num-available">5 available</h6> <!--print amount of timeslots available for specific tutor & specific time of day (morning, afternoon, evening)-->
+					</div>
+					<div class="timepicker evening-box">
+						<h3 class="tk-proxima-nova"><i class="fa fa-caret-right"></i></i>Evening</h3>
+						<h6 class="tk-proxima-nova num-available">12 available</h6> <!--print amount of timeslots available for specific tutor & specific time of day (morning, afternoon, evening)-->
+					</div>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 date date3">
+					<h2 class="tk-proxima-nova date3">Mon, Jan 6</h2>
+					<div class="morning-time-slots time-slots">
+						<a class="back" href="#">Back</a>
+						<div class="times-wrapper morning">
+						<h3 class="tk-proxima-nova"><i class="fa fa-caret-down"></i>Morning</h3>
+						<h6 class="tk-proxima-nova num-available">10 available</h6> <!--print amount of timeslots available for specific tutor & specific time of day (morning, afternoon, evening)-->
+							<ul class="morning-times times">
+								<li class="time">
+									<a href="#"><span class="time-name">9:45 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">10:00 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">10:15 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">10:30 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">10:45 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">11:00 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">11:15 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">11:30 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">11:45 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">12:00 PM</span></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="afternoon-time-slots time-slots">
+						<a class="back" href="#">Back</a>
+						<div class="times-wrapper afternoon">
+						<h3 class="tk-proxima-nova"><i class="fa fa-caret-down"></i>Afternoon</h3>
+						<h6 class="tk-proxima-nova num-available">5 available</h6> <!--print amount of timeslots available for specific tutor & specific time of day (morning, afternoon, evening)-->
+							<ul class="afternoon-times times">
+								<li class="time">
+									<a href="#"><span class="time-name">12:30 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">12:45 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">1:00 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">1:15 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">1:30 PM</span></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="evening-time-slots time-slots">
+						<a class="back" href="#">Back</a>
+						<div class="times-wrapper evening">
+						<h3 class="tk-proxima-nova"><i class="fa fa-caret-down"></i>Evening</h3>
+						<h6 class="tk-proxima-nova num-available">12 available</h6> <!--print amount of timeslots available for specific tutor & specific time of day (morning, afternoon, evening)-->
+							<ul class="evening-times times">
+								<li class="time">
+									<a href="#"><span class="time-name">4:45 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">5:00 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">5:15 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">5:30 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">5:45 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">6:00 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">6:15 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">6:30 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">6:45 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">7:00 PM</span></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="timepicker morning-box">
+						<h3 class="tk-proxima-nova"><i class="fa fa-caret-right"></i>Morning</h3>
+						<h6 class="tk-proxima-nova num-available">10 available</h6> <!--print amount of timeslots available for specific tutor & specific time of day (morning, afternoon, evening)-->
+					</div>
+					<div class="timepicker afternoon-box">
+						<h3 class="tk-proxima-nova"><i class="fa fa-caret-right"></i>Afternoon</h3>
+						<h6 class="tk-proxima-nova num-available">5 available</h6> <!--print amount of timeslots available for specific tutor & specific time of day (morning, afternoon, evening)-->
+					</div>
+					<div class="timepicker evening-box">
+						<h3 class="tk-proxima-nova"><i class="fa fa-caret-right"></i></i>Evening</h3>
+						<h6 class="tk-proxima-nova num-available">12 available</h6> <!--print amount of timeslots available for specific tutor & specific time of day (morning, afternoon, evening)-->
+					</div>
+				</div>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 date date4">
+					<h2 class="tk-proxima-nova">Tues, Jan 7</h2>
+					<div class="morning-time-slots time-slots">
+						<a class="back" href="#">Back</a>
+						<div class="times-wrapper morning">
+						<h3 class="tk-proxima-nova"><i class="fa fa-caret-down"></i>Morning</h3>
+						<h6 class="tk-proxima-nova num-available">10 available</h6> <!--print amount of timeslots available for specific tutor & specific time of day (morning, afternoon, evening)-->
+							<ul class="morning-times times">
+								<li class="time">
+									<a href="#"><span class="time-name">9:45 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">10:00 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">10:15 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">10:30 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">10:45 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">11:00 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">11:15 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">11:30 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">11:45 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">12:00 PM</span></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="afternoon-time-slots time-slots">
+						<a class="back" href="#">Back</a>
+						<div class="times-wrapper afternoon">
+						<h3 class="tk-proxima-nova"><i class="fa fa-caret-down"></i>Afternoon</h3>
+						<h6 class="tk-proxima-nova num-available">5 available</h6> <!--print amount of timeslots available for specific tutor & specific time of day (morning, afternoon, evening)-->
+							<ul class="afternoon-times times">
+								<li class="time">
+									<a href="#"><span class="time-name">12:30 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">12:45 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">1:00 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">1:15 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">1:30 PM</span></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="evening-time-slots time-slots">
+						<a class="back" href="#">Back</a>
+						<div class="times-wrapper evening">
+						<h3 class="tk-proxima-nova"><i class="fa fa-caret-down"></i>Evening</h3>
+						<h6 class="tk-proxima-nova num-available">12 available</h6> <!--print amount of timeslots available for specific tutor & specific time of day (morning, afternoon, evening)-->
+							<ul class="evening-times times">
+								<li class="time">
+									<a href="#"><span class="time-name">4:45 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">5:00 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">5:15 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">5:30 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">5:45 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">6:00 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">6:15 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">6:30 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">6:45 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#"><span class="time-name">7:00 PM</span></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="timepicker morning-box">
+						<h3 class="tk-proxima-nova"><i class="fa fa-caret-right"></i>Morning</h3>
+						<h6 class="tk-proxima-nova num-available">10 available</h6> <!--print amount of timeslots available for specific tutor & specific time of day (morning, afternoon, evening)-->
+					</div>
+					<div class="timepicker afternoon-box">
+						<h3 class="tk-proxima-nova"><i class="fa fa-caret-right"></i>Afternoon</h3>
+						<h6 class="tk-proxima-nova num-available">5 available</h6> <!--print amount of timeslots available for specific tutor & specific time of day (morning, afternoon, evening)-->
+					</div>
+					<div class="timepicker evening-box">
+						<h3 class="tk-proxima-nova"><i class="fa fa-caret-right"></i></i>Evening</h3>
+						<h6 class="tk-proxima-nova num-available">12 available</h6> <!--print amount of timeslots available for specific tutor & specific time of day (morning, afternoon, evening)-->
+					</div>
+				</div>
+				</div>
+		</form>
+		<a class="prev-days" href="#">
+			<img src="assets/back-arrow.png" />
+		</a>
+		<a class="next-days" href="#">
+			<img src="assets/forward-arrow.png" />
+		</a>
+
+	</section>
+	<section class="booking-fields">
+		<h1 class="tk-proxima-nova">Fill in the details!</h1>
+		<form oninput="amount.value=rangeInput.value" class="booking-info">
+			<div class="holder holderleft col-xs-12 col-sm-6 col-md-6 col-lg-6">
+				<div class="form-group">
+					<label class="tk-proxima-nova" for="session-length">Session Length:</label>
+					<span class="tk-proxima-nova"id="minutes">minutes</span><output name="amount" for="rangeInput">60</output>
+					<input class="tk-proxima-nova" id="session-length" name="rangeInput" type="range" min="30" max="120" step="10" value="60">
+				</div>
+				<div class="form-group">
+					<label class="tk-proxima-nova" for="topics">Topics/Chapters: </label>
+					<input class="tk-proxima-nova" id="topics" name="topics" type="text">
+				</div>
+				<div class="form-group">
+					<label class="tk-proxima-nova" for="location">Suggested Location: </label>
+					<input class="tk-proxima-nova" id="location" name="location" type="text">
+				</div>
+			</div>
+			<div class="holder holderright col-xs-12 col-sm-6 col-md-6 col-lg-6">
+				<div class="form-group">
+					<label class="tk-proxima-nova" for="additional">Additional Notes:</label><br />
+					<textarea class="tk-proxima-nova" id="additional" name="additional"></textarea>
+				</div>
+			</div>
+			
+			<button type="submit" class="book-button tk-proxima-nova">Book</button>
+			
+			</form>
+
+	</section>
+
+	<footer>
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<span class="footer-links">
+				<a href="#" class="tk-proxima-nova">About Us</a>
+				<a href="#" class="tk-proxima-nova">The Team</a>
+				<a href="#" class="tk-proxima-nova">Terms of Use</a>
+				<a href="#" class="tk-proxima-nova">Privacy Policy</a>
+				<a href="#" class="tk-proxima-nova">FAQ</a>
+				<a href="#" class="tk-proxima-nova">Contact Us</a>
+				<a href="#" class="tk-proxima-nova">Help Us</a>
+			</span>
+			<span class="footer-actions">
+				<a href="#" class="become-tutor-footer tk-proxima-nova">Become a tutor</a>
+				<a href="#" class="sign-up-footer tk-proxima-nova">Sign up</a>
+			</span>
+		</div>
+		<img class="logo" src="assets/logo-bw.png" />
+		<p class="tk-proxima-nova copyright">&copy; 2013, GuideU LLC. All Rights Reserved</p>
+	</footer>
+</body>
+	<script>
+	$('.morning-box').click(function(){
+		$(this).siblings('.morning-time-slots').css("display","block");
+		$(this).css("display","none");
+		$(this).siblings('.timepicker').css("display","none");
+	});
+	</script>
+	<script>
+	$('.afternoon-box').click(function(){
+		$(this).siblings('.afternoon-time-slots').css("display","block");
+		$(this).css("display","none");
+		$(this).siblings('.timepicker').css("display","none");
+	});
+	</script>
+	<script>
+	$('.evening-box').click(function(){
+		$(this).siblings('.evening-time-slots').css("display","block");
+		$(this).css("display","none");
+		$(this).siblings('.timepicker').css("display","none");
+	});
+	</script>
+	<script>
+	$('.back').click(function(){
+		$('.time-slots').css("display","none");
+		$('.timepicker').css("display","block");
+	});
+	</script>
+
+	<!--login/signup modal script-->

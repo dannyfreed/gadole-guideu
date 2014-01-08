@@ -1,0 +1,445 @@
+/*header*/
+
+header{
+	height:65px;
+	background: #72a5e4;
+}
+.navbar-brand img{
+	height:34px;
+}
+.signup-login{
+	float:right;
+	border-radius:5px;
+	padding-right:1em;
+	padding-top:1em;
+}
+.signup-login a{
+	color:white;
+	display: inline-block;
+float: left;
+padding: 10px;
+border: 1px solid rgba(255,255,255,.99);
+/*-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px; flat or rounded??? */
+line-height: 16px;
+margin: 0;
+text-transform: uppercase;
+font-size: 11px;
+}
+#signup{
+	-webkit-border-top-right-radius: 0;
+-moz-border-radius-topright: 0;
+border-top-right-radius: 0;
+-webkit-border-bottom-right-radius: 0;
+-moz-border-radius-bottomright: 0;
+border-bottom-right-radius: 0;
+border-right: 0;
+}
+#login{
+	-webkit-border-top-left-radius: 0;
+	-moz-border-radius-topleft: 0;
+	border-top-left-radius: 0;
+	-webkit-border-bottom-left-radius: 0;
+	-moz-border-radius-bottomleft: 0;
+	border-bottom-left-radius: 0;
+}
+.signup-login a:hover {
+	color: rgb(73, 73, 73);
+	background-color: #f7fbfc;
+	text-decoration:none;
+}
+.search{
+	border-top:6px solid #dadfe1;
+	border-bottom:6px solid #dadfe1;
+	padding-top: 2em;
+	padding-bottom: 2.5em;
+}
+.form-group{
+	margin-top: .85em;
+	margin-left: 3%;
+}
+.form-group i{
+	position: relative;
+	top: .25em;
+	color:#3ccd71;
+	padding-right: .2em;
+}
+.search-form{
+	display:inline;
+}
+@media (min-width:576px){
+	.search-field{
+		width:320px;
+	}
+	.search{
+		padding-left: 5em;
+	}
+	.find-tutors{
+		margin-left: .3em;
+	}
+}
+@media (max-width:575px){
+	.search-field{
+		width: 90%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.search{
+		padding-left:0;
+	}
+	.find-tutors{
+		margin-left:0;
+		margin-top: .5em;
+	}
+	.form-group{
+		width:100%;
+	}
+	.form-group i{
+		display:none;
+	}
+}
+.search-field{
+	background: #fff url('https://d3dma7a8zw52bz.cloudfront.net/assets/icons/icon_search2x-8263f2c8f9774ccd045d966752e8b049.png') no-repeat 10px center;
+height: 40px;
+padding-left:45px;
+line-height: auto;
+color: #555555;
+vertical-align: middle;
+background-color: #ffffff;
+border: 1px solid #cccccc;
+border-radius: 0px;
+-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+-webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+/*end header*/
+
+.title{
+	background-image:url('assets/white-grid.jpg');
+	overflow:hidden;
+    zoom:1;
+    padding-top:2em;
+    padding-bottom:3em;
+    color:#5d5d5e;
+    text-align:center;
+}
+.booking-console{
+	background:#F2F3F5;
+	overflow:hidden;
+    zoom:1;
+    border-top:4px solid #748d7b;
+    border-bottom: 4px solid #748d7b;
+    text-align:center;
+    padding-bottom:1em;
+}
+.date h2{
+	text-align:center;
+	color:#5d5d5e;
+}
+.booking-console form{
+	padding-left:1.5em;
+	padding-right:1.5em;
+	margin-bottom:2em;
+	max-width:1000px;
+	margin-left:auto;
+	margin-right:auto;
+	zoom: 1;
+	overflow: hidden;
+}
+.timepicker{
+	border-radius:5px;
+	margin-top:2em;
+	cursor:pointer;
+}
+.timepicker{
+	color:#5d5d5e;
+}
+.morning:hover{
+	background-color:#55b472;
+	color:white;
+}
+.morning{
+	border:3px solid #55b472;
+}
+.afternoon:hover{
+	background-color:#3f8855;
+	color:white;
+}
+.afternoon{
+	border:3px solid #3f8855;
+}
+.evening:hover{
+	background-color: #30603f;
+	color:white;
+}
+.evening{
+	border:3px solid #30603f;
+}
+.morning-box:hover{
+	background-color:#55b472;
+	color:white;
+}
+.morning-box{
+	border:3px solid #55b472;
+}
+.afternoon-box:hover{
+	background-color:#3f8855;
+	color:white;
+}
+.afternoon-box{
+	border:3px solid #3f8855;
+}
+.evening-box:hover{
+	background-color: #30603f;
+	color:white;
+}
+.evening-box{
+	border:3px solid #30603f;
+}
+.fa-caret-right, .fa-caret-down{
+	margin-right:1em;
+}
+.times{
+	list-style: none;
+	padding-left: 0;
+}
+.morning-times{
+	border-top: 1px solid #55b472;
+	border-bottom: 1px solid #55b472;
+}
+.afternoon-times{
+	border-top: 1px solid #3f8855;
+	border-bottom: 1px solid #3f8855;
+}
+.evening-times{
+	border-top: 1px solid #30603f;
+	border-bottom: 1px solid #30603f;
+}
+.times-wrapper{
+	border-radius:5px;
+}
+.time-slots{
+	display:none;
+}
+.time-slots .morning{
+	background-color:rgba(85, 180, 114, 0.3);
+}
+.time-slots .afternoon{
+	background-color:rgba(63, 136, 85, 0.2);
+}
+.time-slots .evening{
+	background-color:rgba(48, 96, 63, 0.18);
+}
+.time-slots .morning:hover{
+	color:black;
+}
+.time-slots .afternoon:hover{
+	color:black;
+}
+.time-slots .evening:hover{
+	color:black;
+}
+.times{
+	max-height: 197px;
+	overflow: scroll;
+}
+.time{
+	padding:.4em;
+}
+.morning-times .time{
+	border-top:1px solid #55b472;
+	border-bottom:1px solid #55b472;
+}
+.afternoon-times .time{
+	border-top:1px solid #3f8855;
+	border-bottom:1px solid #3f8855;
+}
+.evening-times .time{
+	border-top: 1px solid #30603f;
+	border-bottom: 1px solid #30603f;
+}
+.time:hover{
+	background-color:#f3f1f1;
+}
+.time a{
+	color:#5d5d5e;
+}
+.time a:hover{
+	color:black;
+	text-decoration:none;
+}
+.back{
+	display: inline-block;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	background-color: rgb(243, 54, 54);
+	color: white;
+	border-radius: 5px;
+	z-index: 9999;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 100%;
+	margin-bottom:.5em;
+}
+.back:hover{
+	color:white;
+	text-decoration:none;
+	background-color:rgb(211, 27, 27);
+}
+.prev-days:hover, .next-days:hover{
+	text-decoration: none;
+	opacity:.85;
+}
+.booking-fields{
+	zoom:1;
+	overflow:hidden;
+	padding:3em;
+	background-image:url('assets/white-grid.jpg');
+}
+.booking-fields h1{
+	color:#5d5d5e;
+	text-align:center;
+	margin-bottom:1em;
+}
+.booking-info{
+	text-align:center;
+}
+input[type="range"]{
+	position: relative;
+	top: 3px;
+}
+.booking-info > .holderleft > .form-group > input{
+	float:right;
+	margin-right:7%;
+	font-size:1.3em;
+	border-radius:3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border:1px solid rgb(221, 221, 221);
+}
+.booking-info > .holderleft > .form-group > label{
+	/*margin-left:5%;*/
+	font-size:1.3em;
+	font-weight:400;
+}
+#session-length{
+	margin-right:5px;
+	width:106px;
+}
+output{
+	float:right;
+	margin-right:5px;
+}
+#minutes{
+	float:right;
+	margin-right:7%;
+}
+.holderleft > .form-group{
+	text-align:left;
+}
+.booking-info > .holderright > .form-group > label{
+	font-size:1.3em;
+	font-weight:400;
+}
+.booking-info > .holder{
+	min-height:147px;
+}
+.holderright > .form-group > textarea{
+	height:91px;
+	width:100%;
+	font-size:1.3em;
+	border-radius:3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border:1px solid rgb(221, 221, 221);
+}
+.book-button{
+color:white;
+background-color:#3ccd71;
+width:40%;
+margin-top:20px;
+margin-left:auto;
+margin-right:auto;
+	font-size: 18px;
+	line-height: 1.33;
+	border-radius: 6px;
+	display: inline-block;
+padding: 10px 12px;
+margin-bottom: 0;
+font-weight: normal;
+text-align: center;
+white-space: nowrap;
+vertical-align: middle;
+cursor: pointer;
+border: 1px solid transparent;
+border-radius: 4px;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+}
+.book-button:hover{
+	background-color:#2BAC5A;
+}
+
+
+
+
+
+
+
+
+/*footer*/
+footer{
+	padding-top:3em;
+	padding-bottom:.3em;
+	height:auto;
+	background-image:url('assets/footer-bg.png');
+	background-position: center;
+	background-size:cover;
+	text-align:center;
+}
+.footer-links{
+
+}
+.footer-links a{
+	margin-left:.3em;
+	margin-right:.3em;
+	color:rgb(207, 207, 207);
+	font-weight:100;
+}
+.footer-actions{
+	float
+}
+.footer-actions a{
+	margin-left:.5em;
+	margin-right:.5em;
+	font-weight:300;
+}
+.become-tutor-footer{
+	color:#579eee;
+}
+.sign-up-footer{
+	color:#3ccd71;
+}
+footer img{
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:8em;
+	margin-bottom:8em;
+}
+footer p{
+	color:white;
+	text-align:center;
+}

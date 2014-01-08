@@ -1,0 +1,190 @@
+<!DOCTYPE HTML>
+<head>
+<title>Find your tutor</title>
+<link rel="stylesheet" href="results.css" type="text/css" />
+<link rel="stylesheet" href="bootstrap.css" type="text/css" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script type="text/javascript" src="//use.typekit.net/xfb1bml.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"> <!--icon typeface-->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+
+</head>
+
+<body>
+<div class="popover">
+</div>
+<header>
+		<nav class="navbar navbar-static-top" role="navigation">
+			<a style="color:white" class="navbar-brand" href="#">
+				<img src="assets/logo.png" />
+			</a>
+		<span>
+		<form class="search-form form-inline" role="form">
+			<div class="form-group">
+	  			<input type="text" class="tk-proxima-nova search-field" placeholder="Search by tutor, subject, or course">
+	  		</div>
+	  	</form>
+	  	</span>
+			<span class="tk-proxima-nova signup-login">
+				<a href="#" id="signup">Signup</a>
+				<a href="#" id="login">Login</a>
+			</span>
+		</nav>
+	</header>
+<section class="top">
+	<!--<header>
+		<nav class="navbar navbar-static-top" role="navigation">
+			<a style="color:white" class="navbar-brand" href="#">
+				<img src="assets/logo.png" />
+			</a>
+		<span><form class="search-form form-inline" role="form">
+			<div class="form-group">
+	  			<input type="text" class="tk-proxima-nova search-field" placeholder="Search by tutor, subject, or course">
+	  		</div>
+	  	</form>
+	  	</span>
+			<span class="tk-proxima-nova signup-login">
+				<a href="#" id="signup">Signup</a>
+				<a href="#" id="login">Login</a>
+			</span>
+		</nav>
+	</header>-->
+	<h1 class="tk-proxima-nova"><span class="num-results">47</span> tutors were found for <span class="subject">econ</span></h1>
+</section>
+<!--<section class="search">
+		<form class="search-form form-inline" role="form">
+			<div class="form-group">
+				<i class="fa fa-search fa-4x"></i>
+	  			<input type="text" class="tk-proxima-nova search-field" placeholder="Can't find what you're looking for?">
+	  			<button type="submit" href="#" class="tk-proxima-nova btn find-tutors">Find Tutors</button>
+	  		</div>
+	  	</form>
+</section>-->
+<section class="grid"> <!--still need sort feature-->
+<ul class="ourHolder container">
+		<li id="tile1" class="flip-container" ontouchstart="this.classList.toggle('hover');">
+		<div class="flipper">
+			<div class="front">
+		      <figure>
+		        <img class="img-responsive" src="assets/rottman-tutor.jpg" alt="Gadole">
+		        <figcaption>
+		          <h3 class="tutor-name tk-proxima-nova">Brandon Rottman</h3>
+		          <h3 class="price"><i class="fa fa-usd"></i> 32/hr</h3>
+		        </figcaption>
+		      </figure>
+			</div>
+			<div class="back">
+				<a class="tk-proxima-nova" href="#">
+					<p class="tk-proxima-nova course-numbers"><span class="badge">ECON 101</span><span class="badge">ECON 102</span><span class="badge">ECON 401</span><span class="badge">ECON 402</span><span class="badge">ECON 401</span><span class="badge">ECON 402</span><span class="badge">ECON 401</span><span class="badge">ECON 402</span><span class="badge">ECON 401</span></p>
+					<div class="star-rating">
+					  <input type="radio" value="1"><i></i>
+					  <input type="radio" value="2"><i></i>
+					  <input checked type="radio" value="3"><i></i>
+					  <input type="radio" value="4"><i></i>
+					  <input type="radio" value="5"><i></i>
+					</div>	
+					<a href="#reviews" class="tk-proxima-nova read-reviews"><i class="fa fa-comments"></i>Read Reviews</a>
+					<a href="#" class="tk-proxima-nova more-info">More Info</a>
+					<a href="#" class="tk-proxima-nova send-message">Send Message</a>
+				</a>
+			</div>
+		</div>
+		</li>
+		<li class="flip-container" ontouchstart="this.classList.toggle('hover');">
+		<div class="flipper">
+			<div class="front">
+		      <figure>
+		        <img class="img-responsive" src="assets/danno-tutor.jpg" alt="Gadole">
+		        <figcaption>
+		          <h3 class="tutor-name tk-proxima-nova">Ben Aronovitz</h3>
+		          <h3 class="price"><i class="fa fa-usd"></i> 50/hr</h3>
+		        </figcaption>
+		      </figure>
+			</div>
+			<div class="back">
+				<p class="tk-proxima-nova course-numbers"><span class="badge">ECON 101</span><span class="badge">ECON 102</span><span class="badge">ECON 401</span><span class="badge">ECON 402</span><span class="badge">ECON 401</span><span class="badge">ECON 402</span><span class="badge">ECON 401</span><span class="badge">ECON 402</span><span class="badge">ECON 401</span></p>
+				<div class="star-rating">
+				  <input type="radio" value="1"><i></i>
+				  <input type="radio" value="2"><i></i>
+				  <input checked type="radio" value="3"><i></i>
+				  <input type="radio" value="4"><i></i>
+				  <input type="radio" value="5"><i></i>
+				</div>	
+				<a href="#reviews" class="tk-proxima-nova read-reviews"><i class="fa fa-comments"></i>Read Reviews</a>
+				<a href="#" class="tk-proxima-nova more-info">More Info</a>
+				<a href="#" class="tk-proxima-nova send-message">Send Message</a>
+			</div>
+		</div>
+		</li>
+		<li class="flip-container" ontouchstart="this.classList.toggle('hover');">
+		<div class="flipper">
+			<div class="front">
+		      <figure>
+		        <img class="img-responsive" src="assets/rottman-tutor.jpg" alt="Gadole">
+		        <figcaption>
+		          <h3 class="tutor-name tk-proxima-nova">Brandon Rottman</h3>
+		          <h3 class="price"><i class="fa fa-usd"></i> 32/hr</h3>
+		        </figcaption>
+		      </figure>
+			</div>
+			<div class="back">
+				<p class="tk-proxima-nova course-numbers"><span class="badge">ECON 101</span><span class="badge">ECON 102</span><span class="badge">ECON 401</span><span class="badge">ECON 402</span><span class="badge">ECON 401</span><span class="badge">ECON 402</span><span class="badge">ECON 401</span><span class="badge">ECON 402</span><span class="badge">ECON 401</span></p>
+				<div class="star-rating">
+				  <input type="radio" value="1"><i></i>
+				  <input type="radio" value="2"><i></i>
+				  <input checked type="radio" value="3"><i></i>
+				  <input type="radio" value="4"><i></i>
+				  <input type="radio" value="5"><i></i>
+				</div>	
+				<a href="#reviews" class="tk-proxima-nova read-reviews"><i class="fa fa-comments"></i>Read Reviews</a>
+				<a href="#" class="tk-proxima-nova more-info">More Info</a>
+				<a href="#" class="tk-proxima-nova send-message">Send Message</a>
+			</div>
+		</div>
+		</li>
+		<li class="flip-container" ontouchstart="this.classList.toggle('hover');">
+		<div class="flipper">
+			<div class="front">
+		      <figure>
+		        <img class="img-responsive" src="assets/rottman-tutor.jpg" alt="Gadole">
+		        <figcaption>
+		          <h3 class="tutor-name tk-proxima-nova">Brandon Rottman</h3>
+		          <h3 class="price"><i class="fa fa-usd"></i> 32/hr</h3>
+		        </figcaption>
+		      </figure>
+			</div>
+			<div class="back">
+				<p class="tk-proxima-nova course-numbers"><span class="badge">ECON 101</span><span class="badge">ECON 102</span><span class="badge">ECON 401</span><span class="badge">ECON 402</span><span class="badge">ECON 401</span><span class="badge">ECON 402</span><span class="badge">ECON 401</span><span class="badge">ECON 402</span><span class="badge">ECON 401</span></p>
+				<div class="star-rating">
+				  <input type="radio" value="1"><i></i>
+				  <input type="radio" value="2"><i></i>
+				  <input checked type="radio" value="3"><i></i>
+				  <input type="radio" value="4"><i></i>
+				  <input type="radio" value="5"><i></i>
+				</div>	
+				<a href="#reviews" class="tk-proxima-nova read-reviews"><i class="fa fa-comments"></i>Read Reviews</a>
+				<a href="#" class="tk-proxima-nova more-info">More Info</a>
+				<a href="#" class="tk-proxima-nova send-message">Send Message</a>
+			</div>
+		</div>
+		</li>
+		<li class="flip-container" ontouchstart="this.classList.toggle('hover');">
+		<div class="flipper">
+			<div class="front">
+		      <figure>
+		        <img class="img-responsive" src="assets/danno-tutor.jpg" alt="Gadole">
+		        <figcaption>
+		          <h3 class="tutor-name tk-proxima-nova">Sir Danno</h3>
+		          <h3 class="price"><i class="fa fa-usd"></i> 32/hr</h3>
+		        </figcaption>
+		      </figure>
+			</div>
+			<div class="back">
+				<p class="tk-proxima-nova course-numbers"><span class="badge">ECON 101</span><span class="badge">ECON 102</span><span class="badge">ECON 401</span><span class="badge">ECON 402</span><span class="badge">ECON 401</span><span class="badge">ECON 402</span><span class="badge">ECON 401</span><span class="badge">ECON 402</span><span class="badge">ECON 401</span></p>
+				<div class="star-rating">
+				  <input 
