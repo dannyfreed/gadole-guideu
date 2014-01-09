@@ -211,13 +211,13 @@ user-select: none;
 	background-color: transparent;
 color: #72a5e4;
 border: 1px solid #72a5e4;
-padding: 10px 39px;
+padding: 17px 29px;
 font-size: 18px;
 line-height: 1.33;
 border-radius: 6px;
 left: 13%;
 position: absolute;
-bottom: 55px;
+bottom: 72px;
 z-index: 9999;
 }
 .more-info:hover{
@@ -239,12 +239,12 @@ user-select: none;
 	background-color: transparent;
 color: #3ccd71;
 border: 1px solid #3ccd71;
-padding: 10px 18px;
+padding: 17px 18px;
 font-size: 18px;
 line-height: 1.33;
 border-radius: 6px;
 position: absolute;
-bottom: 4px;
+bottom: 6px;
 left: 13%;
 z-index: 9999;
 }
@@ -408,7 +408,7 @@ overflow:scroll;
   position: relative;
   background: url('data:image/svg+xml;utf-8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve"><polygon fill="#DDDDDD" points="10,0 13.09,6.583 20,7.639 15,12.764 16.18,20 10,16.583 3.82,20 5,12.764 0,7.639 6.91,6.583 "/></svg>');
   background-size: contain;
-  margin-top: 5px;
+  margin-top: 15px;
 }
 .star-rating i {
   opacity: 0;

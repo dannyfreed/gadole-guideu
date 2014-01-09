@@ -12,17 +12,17 @@
 <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"> <!--icon typeface-->
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
-
+<script src="js/bootstrap.min.js"></script>
 </head>
 
 <body>
 	<header>
 		<nav class="navbar navbar-static-top" role="navigation">
-			<a style="color:white" class="navbar-brand" href="#">
+			<a style="color:white" class="navbar-brand" href="home.html">
 				<img src="assets/logo.png" />
 			</a>
 		<span>
-		<form class="search-form form-inline" role="form">
+		<form action="#" method="post" class="search-form form-inline" role="form">
 			<div class="form-group">
 	  			<input type="text" class="tk-proxima-nova search-field" placeholder="Search by tutor, subject, or course">
 	  		</div>
@@ -38,6 +38,10 @@
 		<h1 class="tk-proxima-nova">Book Your Session</h1>
 	</section>
 	<section class="booking-console">
+	<div class="cust-container">
+	<a class="prev-days" href="#">
+			<img src="assets/back-arrow.png" />
+		</a>
 		<form action="#" method="post">
 		<div class="form-group">
 			<label for="select-date" class="tk-proxima-nova">Select a date</label><input type="date" id="select-date" name="select-date">
@@ -393,7 +397,6 @@
 						<h6 class="tk-proxima-nova num-available">12 available</h6> <!--print amount of timeslots available for specific tutor & specific time of day (morning, afternoon, evening)-->
 					</div>
 				</div>
-				</div>
 				<div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 date date4">
 					<h2 class="tk-proxima-nova">Tues, Jan 7</h2>
 					<div class="morning-time-slots time-slots">
@@ -513,6 +516,7 @@
 				</div>
 				</div>
 		</form>
+	</div><!--cust-container-->
 		<a class="prev-days" href="#">
 			<img src="assets/back-arrow.png" />
 		</a>
@@ -525,6 +529,10 @@
 		<h1 class="tk-proxima-nova">Fill in the details!</h1>
 		<form oninput="amount.value=rangeInput.value" class="booking-info">
 			<div class="holder holderleft col-xs-12 col-sm-6 col-md-6 col-lg-6">
+				<div class="form-group">
+					<label class="tk-proxima-nova" for="date-time">Date/Time:</label>
+					<input class="tk-proxima-nova" id="date-time" name="date-time" type="text" placeholder="Auto-filled with above info">
+				</div>
 				<div class="form-group">
 					<label class="tk-proxima-nova" for="session-length">Session Length:</label>
 					<span class="tk-proxima-nova"id="minutes">minutes</span><output name="amount" for="rangeInput">60</output>
@@ -546,7 +554,7 @@
 				</div>
 			</div>
 			
-			<button type="submit" class="book-button tk-proxima-nova">Book</button>
+			<button type="submit" data-toggle="modal" data-target="#myModal" class="book-button tk-proxima-nova">Book</button>
 			
 			</form>
 
@@ -571,6 +579,27 @@
 		<img class="logo" src="assets/logo-bw.png" />
 		<p class="tk-proxima-nova copyright">&copy; 2013, GuideU LLC. All Rights Reserved</p>
 	</footer>
+
+	<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="tk-proxima-nova modal-title" id="myModalLabel">Almost there...</h4>
+      </div>
+      <div class="modal-body">
+        ...<br /><br /><br />...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
 </body>
 	<script>
 	$('.morning-box').click(function(){

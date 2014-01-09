@@ -296,6 +296,16 @@ transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 	text-decoration:none;
 	background-color:rgb(211, 27, 27);
 }
+.next-days{
+	position: relative;
+left: 470px;
+top: -205px;
+}
+.prev-days{
+	position: relative;
+right: 470px;
+top: -205px;
+}
 .prev-days:hover, .next-days:hover{
 	text-decoration: none;
 	opacity:.85;
@@ -328,7 +338,6 @@ input[type="range"]{
 	border:1px solid rgb(221, 221, 221);
 }
 .booking-info > .holderleft > .form-group > label{
-	/*margin-left:5%;*/
 	font-size:1.3em;
 	font-weight:400;
 }
@@ -355,7 +364,7 @@ output{
 	min-height:147px;
 }
 .holderright > .form-group > textarea{
-	height:91px;
+	height:135px;
 	width:100%;
 	font-size:1.3em;
 	border-radius:3px;
@@ -393,6 +402,11 @@ user-select: none;
 	background-color:#2BAC5A;
 }
 
+.cust-container{
+	max-width: 950px;
+margin-left: auto;
+margin-right: auto;
+}
 
 
 

@@ -98,6 +98,13 @@ border-right: 0;
 	margin-top:1em;
 	padding-left:5em;
 }
+.response-time{
+	margin-top: 1em;
+	padding-left: 5em;
+}
+.response-time p{
+	color:#867388;
+}
 .clock{
 	margin-top:1em;
 	padding-left:5em;
@@ -120,11 +127,12 @@ border-right: 0;
 	margin-right:.3em;
 }
 .book-session{
-	background-color:transparent;
-	color: #3ccd71;
-	border: 1px solid #3ccd71;
+		width: 40%;
+max-width: 256px;
+margin-right:.2em;
+	background-color:#3ccd71;
+	color: white;
 	padding: 1.5em;
-	margin-top: 2.8em;
 	display: inline-block;
 margin-bottom: 0;
 font-size: 14px;
@@ -139,19 +147,26 @@ cursor: pointer;
 -ms-user-select: none;
 -o-user-select: none;
 user-select: none;
+-webkit-box-shadow: rgba(0,0,0,0.15) 0px 2px 2px 0px;
+-moz-box-shadow: rgba(0,0,0,0.15) 0px 2px 2px 0px;
+box-shadow: rgba(0,0,0,0.15) 0px 2px 2px 0px;
 }
 .book-session:hover{
-	background-color:#3ccd71;
+	background-color:#2BAC5A;
 	color:white;
 	text-decoration: none;
 }
+.send-message:active, .book-session:active{
+	position:relative;
+	top:1px;
+}
 .send-message{
-	margin-left: 2em;
-	background-color:transparent;
-	color: #65659a;
-	border: 1px solid #65659a;
+	width: 40%;
+max-width: 256px;
+margin-left:.2em;
+	background-color:#72a5e4;
+	color: white;
 	padding: 1.5em;
-	margin-top: 2.8em;
 	display: inline-block;
 	margin-bottom: 0;
 	font-size: 14px;
@@ -166,14 +181,17 @@ user-select: none;
 	-ms-user-select: none;
 	-o-user-select: none;
 	user-select: none;
+	-webkit-box-shadow: rgba(0,0,0,0.15) 0px 2px 2px 0px;
+-moz-box-shadow: rgba(0,0,0,0.15) 0px 2px 2px 0px;
+box-shadow: rgba(0,0,0,0.15) 0px 2px 2px 0px;
 }
 .send-message:hover{
-	background-color:#65659a;
+	background-color:#4F89D1;
 	color:white;
 	text-decoration:none;
 }
 .action-buttons{
-	margin-left:5.5em;
+	margin-top:1em;
 }
 
 /*STARS*/
@@ -269,8 +287,11 @@ user-select: none;
 }
 .short-blurb{
 	color:#5d5d5e;
-	padding-left:3em;
+	padding-left:5em;
 	margin-bottom:1.5em;
+}
+.short-blurb p{
+	font-size:1.3em;
 }
 .courses-tutored{
 	background-image:url('assets/white-grid.jpg');
@@ -370,6 +391,10 @@ line-height: 1.7em;
 .avatar{
 	height:100px;
 	width:100px;
+	border-radius:50%;
+	box-shadow:0px 1px 4px rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.4);
 }
 .review{
 	margin-top:2em;
