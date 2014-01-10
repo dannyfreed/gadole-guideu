@@ -586,15 +586,112 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="tk-proxima-nova modal-title" id="myModalLabel">Almost there...</h4>
+        <h2 class="tk-proxima-nova modal-title" id="myModalLabel">Almost there...</h2>
       </div>
       <div class="modal-body">
-        ...<br /><br /><br />...
-      </div>
+      <!--1st prompt user to login. No account? Create one. Enter Payment also. Logged in? Add CC info-->
+      			<div class="login-prompt">
+	      			<form action="#" method="post" class="js-login-form">
+	      				<h3 class="tk-proxima-nova">Please log in or create an account</h3>
+			          	<input class="tk-proxima-nova login-input" name="email" placeholder="Your email address" type="email">
+			          	<input class="tk-proxima-nova js-password login-input placeholder" name="password" placeholder="Your password" type="password">
+			          	<a href="javascript:void(0)" class="tk-proxima-nova js-submit-login login-button">Login</a>
+			          	<div>
+			          		<a class="tk-proxima-nova create-an-account" href="javascript:void(0)">Create an Account</a>
+			          		<a class="tk-proxima-nova forgot-password js-open-forgot-password" href="javascript:void(0)">Forgot your password?</a>
+			          	</div>
+		        	</form>
+		        </div>
+		        <div class="payment-only">
+		        	<form action="#" method="post" class="create-account-form payment">
+			        	<h3 class="tk-proxima-nova">Payment details</h3>
+			                <ul class="cards">
+			                    <li class="visa"></li>
+			                    <li class="amex"></li>
+			                    <li class="mastercard"></li>
+			                    <li class="discover"></li>
+			                </ul>
+			            <div class="tk-proxima-nova form-group">
+			                <label for="card_number">Card number</label>
+			                <input type="name" name="card_number" id="card_number">
+			            </div> 
+		                
+		            	<div class="tk-proxima-nova form-group">
+		                    <label for="expiry_date">Expiry date</label>
+		                    <input type="text" name="expiry_date" id="expiry_date" maxlength="5" placeholder="mm/yy">
+		                </div>
+
+		                <div class="tk-proxima-nova form-group">
+		                    <label for="cvv">CVV</label>
+		                    <input type="text" name="cvv" id="cvv" maxlength="3" placeholder="Card Verification Value">
+		            	</div>
+		            	<div class="tk-proxima-nova form-group">
+			            	<input checked id="save-cc-info" name="save-cc-info" type="checkbox">
+			            	<label for="save-cc-info">Save credit card information?</label>
+		            	</div>
+					    <div class="modal-footer">
+					      	<button type="button" class="cancel-transaction" data-dismiss="modal">Cancel</button>
+					       	<button type="button" class="complete-transaction">Complete Transaction</button>
+				     	</div>
+		            </form>
+		        </div><!--payment-only-->
+			<div class="not-logged-in">
+				<form action="#" method="post" class="create-account-form">
+				<h3 class="tk-proxima-nova">Create your account</h3>
+					<p class="tk-proxima-nova">Already have an account? <a href="#">Login</a></p>
+					<div class="tk-proxima-nova form-group">
+						<label for="Fname">First Name:</label>
+						<input id="Fname" type="text">
+					</div>
+					<div class="tk-proxima-nova form-group">
+						<label for="Lname">Last Name:</label>
+						<input id="Lname" type="text">
+					</div>
+					<div class="tk-proxima-nova form-group">
+						<label for="email">Email:</label>
+						<input id="email" type="email">
+					</div>
+					<div class="tk-proxima-nova form-group">
+						<label for="password">Password:</label>
+						<input id="password" type="password">
+					</div>
+					<form action="#" method="post" class="create-account-form payment">
+			        	<h3 class="tk-proxima-nova">Payment details</h3>
+			                <ul class="cards">
+			                    <li class="visa"></li>
+			                    <li class="amex"></li>
+			                    <li class="mastercard"></li>
+			                    <li class="discover"></li>
+			                </ul>
+			            <div class="tk-proxima-nova form-group">
+			                <label for="card_number">Card number</label>
+			                <input type="name" name="card_number" id="card_number">
+			            </div> 
+		                
+		            	<div class="tk-proxima-nova form-group">
+		                    <label for="expiry_date">Expiry date</label>
+		                    <input type="text" name="expiry_date" id="expiry_date" maxlength="5" placeholder="mm/yy">
+		                </div>
+
+		                <div class="tk-proxima-nova form-group">
+		                    <label for="cvv">CVV</label>
+		                    <input type="text" name="cvv" id="cvv" maxlength="3" placeholder="Card Verification Value">
+		            	</div>
+		            	<div class="tk-proxima-nova form-group">
+			            	<input checked id="save-cc-info" name="save-cc-info" type="checkbox">
+			            	<label for="save-cc-info">Save credit card information?</label>
+		            	</div>
+		            </form>
+		    	</form>
+		    </div><!--not-logged-in-->
+		</div>
+	<div class="not-logged-in">
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="cancel-transaction" data-dismiss="modal">Cancel</button>
+        <button type="button" class="complete-transaction">Complete Transaction</button>
       </div>
+    </div><!--not-logged-in-->
+      
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
@@ -629,4 +726,44 @@
 	});
 	</script>
 
-	<!--login/signup modal script-->
+	<!--credit card script-->
+		<script>
+	$('#card_number').keyup(function(){
+		var card = ($(this).val());
+		var VisaValidator = card.substring(0,1);
+		var MastercardAmexValidator = card.substring(0,2);
+		var DiscoverValidator = card.substring(0,4);
+		if (VisaValidator == "4"){
+			$('.cards > li').addClass('grayed');
+			$('.visa').removeClass('grayed');
+		}
+		if (MastercardAmexValidator == "51" || MastercardAmexValidator == "52" || MastercardAmexValidator == "53" || MastercardAmexValidator == "54" || MastercardAmexValidator == "55"){
+			$('.cards > li').addClass('grayed');
+			$('.mastercard').removeClass('grayed');
+		}
+		if (MastercardAmexValidator == "34" || MastercardAmexValidator == "37"){
+			$('.cards > li').addClass('grayed');
+			$('.amex').removeClass('grayed');
+		}	
+		if (MastercardAmexValidator == "65" || DiscoverValidator == "6011"){
+			$('.cards > li').addClass('grayed');
+			$('.discover').removeClass('grayed');
+		}		
+		if ( $('#card_number').length == 0 ){
+			$('.cards > li').removeClass('grayed');
+		}
+	});
+	</script>
+	<script>
+	$('.js-login-form > .login-button').click(function(){
+		$('.login-prompt').css("display","none");
+		$('.payment-only').css("display","block");
+	});
+	</script>
+	<script>
+		$('.create-an-account').click(function(){
+			$('.login-prompt').css("display","none");
+			$('.not-logged-in').css("display","block");
+		});
+	</script>
+

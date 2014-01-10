@@ -331,10 +331,12 @@ box-shadow: rgba(0,0,0,0.15) 0px 2px 2px 0px;
 }
 .subject{
 	color:white;
-	text-shadow:1px 1px 1px black;
 	text-align: center;
 	padding-top: 2px;
 	margin-top:2em;
+}
+.subject h2{
+	text-shadow: 1px 1px 1px black;
 }
 .badge{
 	font-size:1.3em;
