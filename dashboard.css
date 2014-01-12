@@ -213,10 +213,12 @@ z-index: 9999;
 	text-decoration: none;
 }
 .book-now:active{
-	bottom:57px;
+	position:relative;
+	top:1px;
 }
 .send-message:active{
-	bottom:6px;
+	position:relative;
+	top:1px;
 }
 .send-message{
 		display: inline-block;
@@ -266,6 +268,7 @@ box-shadow: 0px 1px 5px rgba(50, 50, 50, 0.23);
 -moz-border-radius: 4px;
 border-radius: 4px;
 	padding:1em;
+	overflow:scroll;
 }
 .tutor-pic {
 	height:170px;
@@ -337,24 +340,69 @@ border-radius: 4px;
 	margin-right: auto;
 }
 .cust-container{
-	max-width:1500px;
+	max-width:1000px;
 	margin-left:auto;
 	margin-right:auto;
 }
 .history{
 	background-color:#f6f8f8;
 	border-top: 1px solid #dadfe1;
+	padding-bottom:4em;
 }
 .history > h1{
 	text-align:center;
 	font-size:3.3em;
 }
 
-
-
-
-
-
+.table-holder > table{
+	width:100%;
+	border: 1px solid #dadfe1;
+	color:white;
+	text-align: center;
+	margin-top:2em;
+}
+th, tr{
+	height:38px;
+	text-align: center;
+	border-bottom:1px solid #80ace4;
+}
+.view-session{
+	display: inline-block;
+text-align: center;
+white-space: nowrap;
+vertical-align: middle;
+cursor: pointer;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+background-color: white;
+color: #78acec;
+padding-top: 5px;
+padding-bottom: 5px;
+width: 80%;
+border-radius: 5px;
+z-index: 9999;
+border: 0;
+}
+.confirmed:before{
+	content: "\f058";
+}
+.confirmed{
+	font-family: FontAwesome;
+font-style: normal;
+font-weight: normal;
+line-height: 1;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+color: #3ccd71; 
+font-size: 1.3333333333333333em;
+}
+.modal-body{
+	zoom: 1;
+overflow: hidden;
+}
 
 
 

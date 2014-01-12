@@ -1487,6 +1487,7 @@ table td[class*="col-"],
 table th[class*="col-"] {
   display: table-cell;
   float: none;
+  text-align: center;
 }
 
 .table > thead > tr > td.active,
