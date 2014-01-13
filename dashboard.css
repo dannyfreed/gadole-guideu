@@ -250,7 +250,7 @@ margin-top:.5em;
 .tutor-name{
 	color:#5d5d5e;
 }
-.price{
+.tutor-info > .price{
 	color:#3ccd71;
 	margin-top:10px;
 }
@@ -324,7 +324,7 @@ border-radius: 4px;
 	color:#3ccd71;
 	margin-right:.5em;
 }
-.what, .where, .when, .additional{
+.what, .where, .when, .additional, .info > .price{
 	font-size:1.2em;
 	margin-top:1.2em;
 	text-align:left;
@@ -366,6 +366,9 @@ th, tr{
 	text-align: center;
 	border-bottom:1px solid #80ace4;
 }
+th{
+	text-transform: uppercase;
+}
 .view-session{
 	display: inline-block;
 text-align: center;
@@ -381,7 +384,6 @@ background-color: white;
 color: #78acec;
 padding-top: 5px;
 padding-bottom: 5px;
-width: 80%;
 border-radius: 5px;
 z-index: 9999;
 border: 0;
@@ -402,8 +404,85 @@ font-size: 1.3333333333333333em;
 .modal-body{
 	zoom: 1;
 overflow: hidden;
+padding:10px !important;
 }
-
+.modal-title{
+	display:inline;
+}
+.modal-body > .info > .avatar{
+	height:150px;
+}
+.review{
+	font-size:1.3em;
+	color:rgb(187, 187, 187);
+	margin-top:1.2em;
+}
+.review > a{
+	
+}
+.review > a:hover{
+}
+.info > .review > .fa-times-circle{
+	margin-right:.5em;
+}
+@media (min-width:920px){
+	.view-session{
+		width:80%;
+	}
+}
+@media(max-width:919px){
+	.view-session{
+		width:100%;
+	}
+}
+.not-occured:before{
+	content: "\f057";
+}
+.not-occured{
+	display: inline-block;
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color:rgb(236, 66, 66);
+	font-size: 1.3333333333333333em;
+}
+.never-occurred{
+	position: relative;
+	top: -3px;
+	float:right;
+	margin-right:3em;
+	color: white;
+background-color: rgb(236, 66, 66);
+display: inline-block;
+padding: 6px 7px;
+font-weight: normal;
+text-align: center;
+white-space: nowrap;
+vertical-align: middle;
+cursor: pointer;
+border: 0;
+border-radius: 4px;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+}
+.never-occurred:active{
+	top:-2px;
+}
+.never-occurred:hover{
+	color:white;
+	text-decoration:none;
+}
+.info > .price > img{
+	height:20px;
+	float:left;
+	margin-right:.5em;
+}
 
 
 
