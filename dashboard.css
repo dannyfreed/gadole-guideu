@@ -16,16 +16,16 @@ header{
 .signup-login a{
 	color:white;
 	display: inline-block;
-	float: left;
-	padding: 10px;
-	border: 1px solid rgba(255,255,255,.99);
-	/*-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px; flat or rounded??? */
-	line-height: 16px;
-	margin: 0;
-	text-transform: uppercase;
-	font-size: 11px;
+float: left;
+padding: 10px;
+border: 1px solid rgba(255,255,255,.99);
+/*-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px; flat or rounded??? */
+line-height: 16px;
+margin: 0;
+text-transform: uppercase;
+font-size: 11px;
 }
 #signup{
 	-webkit-border-top-right-radius: 0;
@@ -58,6 +58,7 @@ border-right: 0;
 .form-group{
 	margin-top: .85em;
 	margin-left: 3%;
+	width:100%;
 }
 .form-group i{
 	position: relative;
@@ -68,42 +69,12 @@ border-right: 0;
 .search-form{
 	display:inline;
 }
-@media (min-width:576px){
-	.search-field{
-		width:320px;
-	}
-	.search{
-		padding-left: 5em;
-	}
-	.find-tutors{
-		margin-left: .3em;
-	}
-}
-@media (max-width:575px){
-	.search-field{
-		width: 90%;
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	.search{
-		padding-left:0;
-	}
-	.find-tutors{
-		margin-left:0;
-		margin-top: .5em;
-	}
-	.form-group{
-		width:100%;
-	}
-	.form-group i{
-		display:none;
-	}
-}
 .search-field{
-	background: #fff url('https://d3dma7a8zw52bz.cloudfront.net/assets/icons/icon_search2x-8263f2c8f9774ccd045d966752e8b049.png') no-repeat 10px center;
+	background: #fff url('assets/search.png') no-repeat;
+background-position: 97% center;
 height: 40px;
-padding-left:45px;
+padding-left:10px;
+padding-right: 33px;
 line-height: auto;
 color: #555555;
 vertical-align: middle;
@@ -114,6 +85,51 @@ border-radius: 0px;
 box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+border-radius:5px;
+width:80%;
+}
+.navbar > .user-info{
+	padding-left:0;
+}
+.user-info{
+	float:right;
+	padding-right:1em;
+}
+.user-pic{
+	display:inline-block;
+	float:right;
+}
+.credentials{
+	display:inline-block;
+	text-align: center;
+	float: right;
+}
+.user-pic > img{
+	height: 50px;
+	margin-top: 7px;
+	margin-right:1em;
+}
+ .user-name{
+	color:white;
+	font-weight:600;
+	margin-top:7px;
+}
+.coin{
+	font-weight:400;
+	padding-top:.8em;
+}
+.coin a{
+	color:white;
+}
+.navbar > div{
+	max-height:65px;
+	overflow:hidden;
+}
+.number-credits > img{
+	height: 17px;
+position: relative;
+top: -1px;
+margin-right: 6px;
 }
 /*end header*/
 section{

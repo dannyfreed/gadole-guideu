@@ -18,17 +18,39 @@
 <body>
 	<header>
 		<nav class="navbar navbar-static-top" role="navigation">
-			<a style="color:white" class="navbar-brand" href="home.html">
-				<img src="assets/logo.png" />
-			</a>
-
-			<span class="tk-proxima-nova signup-login">
-				<a href="#" id="signup">Signup</a>
-				<a href="#" id="login">Login</a>
-			</span>
+			<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+				<a style="color:white" class="navbar-brand" href="home.html">
+					<img src="assets/logo.png" />
+				</a>
+			</div>
+			<div class="col-xs-6 col-sm-7 col-md-7 col-lg-7">
+				<form action="#" method="post" class="search-form form-inline" role="form">
+					<div class="form-group">
+			  			<input type="text" class="tk-proxima-nova search-field" placeholder="Search by tutor, subject, or course">
+			  		</div>
+			  	</form>
+		  	</div>
+		  	<div class="user-info col-xs-4 col-sm-3 col-md-3 col-lg-3">
+		  		<!--if user-not-signed-in-->
+			  	<!--<span class="tk-proxima-nova signup-login">
+					<a href="#" id="signup">Signup</a>
+					<a href="#" id="login">Login</a>
+				</span>-->
+				<!--end if user-not-signed-in-->
+				<div class="credentials">
+					<div class="tk-proxima-nova user-name">
+						<span>Danny Freed </span>
+						<div class="coin">
+							<a href="#" class="tk-proxima-nova number-credits"><img src="assets/coin" />5 credits</a>
+						</div>
+					</div>
+				</div>
+				<div class="user-pic">
+					<img src="assets/freed.png" />
+				</div>
+			</div>
 		</nav>
 	</header>
-
 	<section class="brief">
 	<div>
 		<div class="tutor-pic col-xs-12 col-sm-5 col-md-5 col-lg-5">
