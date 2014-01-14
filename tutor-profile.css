@@ -104,7 +104,10 @@ width:80%;
 	text-align: center;
 	float: right;
 }
-.user-pic > img{
+.user-pic > a:hover{
+	text-decoration:none;
+}
+.user-pic > a > img{
 	height: 50px;
 	margin-top: 7px;
 	margin-right:1em;
@@ -121,7 +124,7 @@ width:80%;
 .coin a{
 	color:white;
 }
-.navbar > div{
+.head{
 	max-height:65px;
 	overflow:hidden;
 }
@@ -131,6 +134,83 @@ position: relative;
 top: -1px;
 margin-right: 6px;
 }
+
+/*login-popover*/
+.login-box{
+	position: absolute;
+	top: 60px;
+	right: 22px;
+	z-index: 99999;
+	display:none;
+}
+.arrow{
+	width: 13px;
+	height: 6px;
+	position: relative;
+	left: 15px;
+	background: transparent url('assets/arrow.png') no-repeat 0 0;
+}
+.login-flyover{
+	background-color:#f7fbfc;
+	position:relative;
+	border-radius:5px;
+	text-align:center;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-left: 3em;
+	padding-right: 3em;
+	box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.4);
+}
+/* when login flyover comes up, change #login to this:*/
+
+#login.clicked{
+	color: rgb(73, 73, 73);
+	background-color: #f7fbfc;
+}
+.js-login-form input{
+	width: 100%;
+	padding: 0px 10px;
+	margin: 0 0 10px 0;
+	font-size: 14px;
+	-webkit-font-smoothing: antialiased;
+	height: 36px;
+	color: #222;
+	border: solid 1px #d7dfe0;
+	background-color: white;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	-webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,0.08);
+	-moz-box-shadow: inset 0 1px 3px rgba(0,0,0,0.08);
+	box-shadow: inset 0 1px 3px rgba(0,0,0,0.08);
+}
+.login-button{
+	width: 100%;
+height: 36px;
+color:white;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+background-color: #3ccd71;
+font-weight: normal;
+font-size: 16px;
+text-shadow: none;
+border: none;
+-webkit-font-smoothing: antialiased;
+}
+.login-button:hover{
+	background-color: #2BAC5A;
+}
+.forgot-password{
+	font-size: 12px;
+color: #4f78b6;
+margin: 15px 0 0 0;
+display:block;
+}
+/*end login-popover*/
+
 /*end header*/
 .brief{
 	padding-top:1em;

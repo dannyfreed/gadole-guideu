@@ -51,12 +51,20 @@
 					</div>
 				</div>
 				<div class="user-pic">
-					<img src="assets/freed.png" />
+					<a href="javascript:void(0);"><img src="assets/freed.png" /></a>
 				</div>-->
 				<!--end if user-is-signed-in-->
 			</div>
 		</nav>
 	</header>
+	
+	<script>
+	$( ".user-pic > a" ).toggle(function() {
+		$('.login-box').fadeIn();
+			}, function() {
+		$('.login-box').fadeOut();
+	});
+</script>
 <section class="top">
 	
 	<h1 class="tk-proxima-nova"><span class="num-results">47</span> tutors were found for <span class="subject">econ</span></h1>

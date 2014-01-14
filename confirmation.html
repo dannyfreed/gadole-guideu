@@ -17,21 +17,21 @@
 </head>
 
 <body>
-	<header>
+			<header>
 		<nav class="navbar navbar-static-top" role="navigation">
-			<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+			<div class="head col-xs-2 col-sm-2 col-md-2 col-lg-2">
 				<a style="color:white" class="navbar-brand" href="home.html">
 					<img src="assets/logo.png" />
 				</a>
 			</div>
-			<div class="col-xs-6 col-sm-7 col-md-7 col-lg-7">
+			<div class="head col-xs-6 col-sm-7 col-md-7 col-lg-7">
 				<form action="#" method="post" class="search-form form-inline" role="form">
 					<div class="form-group">
 			  			<input type="text" class="tk-proxima-nova search-field" placeholder="Search by tutor, subject, or course">
 			  		</div>
 			  	</form>
 		  	</div>
-		  	<div class="user-info col-xs-4 col-sm-3 col-md-3 col-lg-3">
+		  	<div class="user-info head col-xs-4 col-sm-3 col-md-3 col-lg-3">
 		  		<!--if user-not-signed-in-->
 			  	<!--<span class="tk-proxima-nova signup-login">
 					<a href="#" id="signup">Signup</a>
@@ -47,11 +47,27 @@
 					</div>
 				</div>
 				<div class="user-pic">
-					<img src="assets/freed.png" />
+					<a href="javascript:void(0);"><img src="assets/freed.png" /></a>
 				</div>
 			</div>
+			    <div class="login-box">
+			      	<div class="arrow">
+			      	</div>
+			      	<div class="login-flyover">
+			        	<div><a class="settings" href="#">Settings</a></div>
+			        	<div><a class="logout" href="#">Logout</a></div>
+			      	</div>
+    			</div>
 		</nav>
 	</header>
+
+<script>
+	$( ".user-pic > a" ).toggle(function() {
+		$('.login-box').fadeIn();
+			}, function() {
+		$('.login-box').fadeOut();
+	});
+</script>
 	<section class="title">
 		<h1 class="tk-proxima-nova">Your tutoring session has been booked!</h1>
 	</section>
