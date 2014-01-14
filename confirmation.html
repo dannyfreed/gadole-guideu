@@ -64,8 +64,10 @@
 <script>
 	$( ".user-pic > a" ).toggle(function() {
 		$('.login-box').fadeIn();
+		$('.user-pic > a > img').css("opacity","0.8");
 			}, function() {
 		$('.login-box').fadeOut();
+		$('.user-pic > a > img').css("opacity","1.0");
 	});
 </script>
 	<section class="title">
