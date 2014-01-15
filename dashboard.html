@@ -17,8 +17,8 @@
 </head>
 
 <body>
-		<header>
-		<nav class="navbar navbar-static-top" role="navigation">
+	<header class="navbar-fixed-top">
+		<nav class="navbar navbar-fixed-top" role="navigation">
 			<div class="head col-xs-2 col-sm-2 col-md-2 col-lg-2">
 				<a style="color:white" class="navbar-brand" href="home.html">
 					<img src="assets/logo.png" />
@@ -62,12 +62,10 @@
 	</header>
 
 <script>
-	$( ".user-pic > a" ).toggle(function() {
-		$('.login-box').fadeIn();
-		$('.user-pic > a > img').css("opacity","0.8");
+	$( ".user-pic > a, .login-box" ).hover(function() {
+		$('.login-box').stop(true, true).delay(200).fadeIn(200);
 			}, function() {
-		$('.login-box').fadeOut();
-		$('.user-pic > a > img').css("opacity","1.0");
+		$('.login-box').stop(true, true).delay(200).fadeOut(200);
 	});
 </script>
 	<section class="top">

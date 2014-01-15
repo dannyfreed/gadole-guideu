@@ -1,5 +1,7 @@
 /*header*/
-
+body{
+	padding-top:65px;
+}
 header{
 	height:65px;
 	background: #72a5e4;
@@ -99,7 +101,7 @@ width:80%;
 	display:inline-block;
 	float:right;
 }
-.credentials{
+.credentials-bio{
 	display:inline-block;
 	text-align: center;
 	float: right;
@@ -111,6 +113,8 @@ width:80%;
 	height: 50px;
 	margin-top: 7px;
 	margin-right:1em;
+	border: 2px solid white;
+	border-radius: 50%;
 }
  .user-name{
 	color:white;
@@ -210,7 +214,10 @@ margin: 15px 0 0 0;
 display:block;
 }
 /*end login-popover*/
-
+.number-credits{
+	position:relative;
+	left:3px;
+}
 /*end header*/
 .brief{
 	padding-top:1em;
@@ -445,7 +452,8 @@ box-shadow: rgba(0,0,0,0.15) 0px 2px 2px 0px;
 	color:#5d5d5e;
 }
 .credentials{
-	padding-top:.8em;
+	padding-top:0;
+	float:right;
 }
 .short-blurb{
 	color:#5d5d5e;

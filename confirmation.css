@@ -1,5 +1,7 @@
 /*header*/
-
+body{
+	padding-top:65px;
+}
 header{
 	height:65px;
 	background: #72a5e4;

@@ -1,5 +1,7 @@
 /*header*/
-
+body{
+	padding-top:65px;
+}
 header{
 	height:65px;
 	background: #72a5e4;
@@ -293,25 +295,25 @@ cursor: pointer;
 -ms-user-select: none;
 -o-user-select: none;
 user-select: none;
+color: #3ccd71;
+border: 1px solid #3ccd71;
 	background-color: transparent;
-color: #72a5e4;
-border: 1px solid #72a5e4;
-padding: 17px 29px;
+padding: 17px 49px;
 font-size: 18px;
 line-height: 1.33;
 border-radius: 6px;
-left: 13%;
+left: 14%;
 position: absolute;
 bottom: 72px;
 z-index: 9999;
 }
 .more-info:hover{
 	color:white;
-	background-color:#78acec;
+	background-color:#3ccd71;
 	text-decoration: none;
 }
 .send-message{
-		display: inline-block;
+display: inline-block;
 text-align: center;
 white-space: nowrap;
 vertical-align: middle;
@@ -322,20 +324,20 @@ cursor: pointer;
 -o-user-select: none;
 user-select: none;
 	background-color: transparent;
-color: #3ccd71;
-border: 1px solid #3ccd71;
-padding: 17px 18px;
+color: #72a5e4;
+border: 1px solid #72a5e4;
+position: absolute;
+bottom: 6px;
+z-index: 9999;
+padding: 17px 39px;
 font-size: 18px;
 line-height: 1.33;
 border-radius: 6px;
-position: absolute;
-bottom: 6px;
-left: 13%;
-z-index: 9999;
+left: 14%;
 }
 .send-message:hover{
 	color:white;
-	background-color:#3ccd71;
+	background-color:#78acec;
 	text-decoration:none;
 }
 .book-now:hover{
