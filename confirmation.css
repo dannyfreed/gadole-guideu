@@ -111,6 +111,8 @@ width:80%;
 	height: 50px;
 	margin-top: 7px;
 	margin-right:1em;
+	border: 2px solid white;
+	border-radius: 50%;
 }
  .user-name{
 	color:white;

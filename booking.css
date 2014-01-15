@@ -104,10 +104,12 @@ width:80%;
 	text-align: center;
 	float: right;
 }
-.user-pic > img{
+.user-pic > a > img{
 	height: 50px;
 	margin-top: 7px;
 	margin-right:1em;
+	border: 2px solid white;
+	border-radius: 50%;
 }
  .user-name{
 	color:white;
