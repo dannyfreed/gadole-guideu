@@ -5,12 +5,12 @@ font-weight: 400;
 text-decoration: none;
 border-radius: 20px;
 cursor: pointer;
-padding: 8px 33px 8px 17px;
+padding: 4px 28px 4px 13px;
 margin: 0 auto;
 position: absolute;
-margin-left: -47px;
+margin-left: -43px;
 top: 409px;
-z-index: 999999;
+z-index: 999;
 }
 .detail > .button:hover{
 	background-color:#F3D278;
@@ -253,6 +253,8 @@ section > h1{
 	zoom:1;
 	overflow:hidden;
 	background-color:#f6f8f8;
+	padding-bottom:1em;
+	text-align:center;
 }
 .recent-tutors > h1{
 	color:#5d5d5e;
@@ -416,7 +418,21 @@ border-radius: 4px;
 .vis{
 	visibility:visible;
 }
-
+.browse-more{
+	margin-left: auto;
+margin-right: auto;
+color: #2b2b35;
+border: 2px solid #2b2b35;
+padding:10px;
+position:relative;
+top:-1em;
+font-size:1.2em;
+}
+.browse-more:hover{
+	background-color:#2b2b35;
+	color:white;
+	text-decoration: none;
+}
 .upcoming-sessions h1{
 	text-align:center;
 	font-size:3.3em;
@@ -424,6 +440,58 @@ border-radius: 4px;
 .upcoming-sessions{
 	border-top: 1px solid #dadfe1;
 	text-align:center;
+}
+.upcoming-cancel{
+	display: inline-block;
+text-align: center;
+white-space: nowrap;
+vertical-align: middle;
+cursor: pointer;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+background-color: rgb(236, 66, 66);
+color: white;
+padding: 10px;
+padding-left:15px;
+padding-right:15px;
+line-height: 1.33;
+border-radius: 6px;
+z-index: 9999;
+margin-top: .5em;
+margin-right:.2em;
+}
+.upcoming-cancel:hover{
+	text-decoration: none;
+	background-color:rgb(216, 46, 46);
+	color:white;
+}
+.upcoming-message{
+display: inline-block;
+text-align: center;
+white-space: nowrap;
+vertical-align: middle;
+cursor: pointer;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+background-color: #78acec;
+color: white;
+padding:10px;
+line-height: 1.33;
+border-radius: 6px;
+z-index: 9999;
+margin-top:.5em;
+margin-left:.2em;
+}
+.upcoming-message:hover{
+	color:white;
+	background-color:#4F89D1;
+	text-decoration:none;
 }
 .session-holder{
 	padding:1em;
@@ -457,6 +525,7 @@ border-radius: 4px;
 	font-size:1.2em;
 	margin-top:1.2em;
 	text-align:center;
+	font-weight:600;
 }
 .avatar{
 	height: 110px;

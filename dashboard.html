@@ -90,6 +90,9 @@
 			</li>
 			<li id="tutor2">
 				<div class="tutor-info appears2 invis">
+					<div id="detail2" class="detail">
+						<a href="#" class="tk-proxima-nova button">Review</a>
+					</div>	
 					<a href="tutor-profile.html"><img class="tutor-pic always-there vis" src="assets/rottman.png" /></a>
 					<h3 class="always-there vis tk-proxima-nova">Brandon Rottman</h3>
 					<h3 class="price"><i class="fa fa-usd"></i> 30/hr</h3>
@@ -99,6 +102,9 @@
 			</li>
 			<li id="tutor3">
 				<div class="tutor-info appears3 invis">
+					<div id="detail3" class="detail">
+						<a href="#" class="tk-proxima-nova button">Review</a>
+					</div>	
 					<a href="tutor-profile.html"><img class="tutor-pic always-there vis" src="assets/freed.png" /></a>
 					<h3 class="always-there vis tk-proxima-nova">Danny Freed</h3>
 					<h3 class="price"><i class="fa fa-usd"></i> 70/hr</h3>
@@ -108,6 +114,9 @@
 			</li>
 			<li id="tutor4">
 				<div class="tutor-info appears4 invis">
+					<div id="detail4" class="detail">
+						<a href="#" class="tk-proxima-nova button">Review</a>
+					</div>	
 					<a href="tutor-profile.html"><img class="tutor-pic always-there vis" src="assets/varn.png" /></a>
 					<h3 class="always-there vis tk-proxima-nova">Varn Pilcowitz</h3>
 					<h3 class="price"><i class="fa fa-usd"></i> 50/hr</h3>
@@ -116,7 +125,7 @@
 				</div>
 			</li>
 		</ul>
-		<a href="#">Browse More</a>
+		<a class="tk-proxima-nova browse-more" href="#">Browse More</a>
 	</section>
 	<section class="upcoming-sessions">
 		<h1 class="tk-proxima-nova">Upcoming Sessions</h1>
@@ -132,7 +141,9 @@
 				</div>
 				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 info info-pic">
 					<img class="thumb avatar" src="assets/danno.png" />
-					<p class="tutor-name">John Doe</p>
+					<p class="tk-proxima-nova tutor-name">John Doe</p>
+					<a class="tk-proxima-nova upcoming-cancel" href="#">Cancel</a>
+					<a class="tk-proxima-nova upcoming-message" href="#">Message</a>
 				</div>
 				</span>
 			</div>
@@ -148,7 +159,9 @@
 				</div>
 				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 info info-pic">
 					<img class="avatar" src="assets/danno.png" />
-					<p class="tutor-name">John Doe</p>
+					<p class="tk-proxima-nova tutor-name">John Doe</p>
+					<a class="tk-proxima-nova upcoming-cancel" href="#">Cancel</a>
+					<a class="tk-proxima-nova upcoming-message" href="#">Message</a>
 				</div>
 				</span>
 			</div>
@@ -164,7 +177,9 @@
 				</div>
 				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 info info-pic">
 					<img class="avatar" src="assets/danno.png" />
-					<p class="tutor-name">John Doe</p>
+					<p class="tk-proxima-nova tutor-name">John Doe</p>
+					<a class="tk-proxima-nova upcoming-cancel" href="#">Cancel</a>
+					<a class="tk-proxima-nova upcoming-message" href="#">Message</a>
 				</div>
 				</span>
 			</div>
@@ -180,7 +195,9 @@
 				</div>
 				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 info info-pic">
 					<img class="avatar" src="assets/danno.png" />
-					<p class="tutor-name">John Doe</p>
+					<p class="tk-proxima-nova tutor-name">Jane Doe</p>
+					<a class="tk-proxima-nova upcoming-cancel" href="#">Cancel</a>
+					<a class="tk-proxima-nova upcoming-message" href="#">Message</a>
 				</div>
 				</span>
 			</div>
@@ -380,6 +397,24 @@ $('#detail1 > .button').hover(function(){
 	$('#tutor1 > .tutor-info > a > .tutor-pic').css("opacity","0.7");
 		}, function() {
 	$('#tutor1 > .tutor-info > a > .tutor-pic').css("opacity","1.0");
+	}
+);
+$('#detail2 > .button').hover(function(){
+	$('#tutor2 > .tutor-info > a > .tutor-pic').css("opacity","0.7");
+		}, function() {
+	$('#tutor2 > .tutor-info > a > .tutor-pic').css("opacity","1.0");
+	}
+);
+$('#detail3 > .button').hover(function(){
+	$('#tutor3 > .tutor-info > a > .tutor-pic').css("opacity","0.7");
+		}, function() {
+	$('#tutor3 > .tutor-info > a > .tutor-pic').css("opacity","1.0");
+	}
+);
+$('#detail4 > .button').hover(function(){
+	$('#tutor4 > .tutor-info > a > .tutor-pic').css("opacity","0.7");
+		}, function() {
+	$('#tutor4 > .tutor-info > a > .tutor-pic').css("opacity","1.0");
 	}
 );
 </script>
