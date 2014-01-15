@@ -77,21 +77,21 @@
 	<h1 class="header let-us tk-proxima-nova">Let us <span style="font-weight:700">GuideU</span></h1>
 	<div class="gutter">
 		<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-			<figure class="one">
+			<figure class="one animated-one bounceInDown">
 				<img class="onetwothree img-responsive" src="assets/search-icon.png" />
 				<figcaption class="onetwothree tk-proxima-nova">Our tutors are the best at University of Michigan, second to none. They have succeeded in the courses, and most importantly, they have a passion for helping you succeed.
 				</figcaption>
 			</figure>
 		</div>
 		<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-			<figure class="two">
+			<figure class="two animated-two bounceInDown">
 				<img class="onetwothree img-responsive" src="assets/book-icon.png" />
 				<figcaption class="onetwothree tk-proxima-nova">Find a time that is right for you and your tutor. No more texting or emailing back and forth to figure out something that works. View tutor schedules upfront, <em>before</em> booking a session.
 				</figcaption>
 			</figure>
 		</div>
 		<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-			<figure class="three">
+			<figure class="three animated-three bounceInDown">
 				<img class="onetwothree img-responsive" src="assets/learn-icon.png" />
 				<figcaption class="onetwothree tk-proxima-nova">With our rich library of tutor and study-authored lecture notes, study guides, practice tests, you can spend more time doing the studying that matters.
 				</figcaption>
@@ -210,11 +210,9 @@
 <script>
 
 $('.search-field').waypoint(function(){
-	$('.one').fadeIn("medium", function(){
-		$('.two').fadeIn("medium", function(){
-			$('.three').fadeIn("medium");
-		});
-	});
+  $(".one").css('visibility','visible').hide().fadeIn("slow");
+  $(".two").css('visibility','visible').hide().fadeIn("slow");
+  $(".three").css('visibility','visible').hide().fadeIn("slow");
 });
 </script>
 
