@@ -76,8 +76,11 @@
 		<h1 class="tk-proxima-nova">Your Tutors</h1>
 
 		<ul class="recent-tutors-list ourHolder container">
-			<li id="tutor1">
+			<li id="tutor1"> 
 				<div class="tutor-info appears1 invis">
+					<div id="detail1" class="detail">
+						<a href="#" class="tk-proxima-nova button">Review</a>
+					</div>	
 					<a href="tutor-profile.html"><img class="tutor-pic always-there vis" src="assets/danno.png" /></a>
 					<h3 class="always-there vis tk-proxima-nova">Ben Aronovitz</h3>
 					<h3 class="price"><i class="fa fa-usd"></i> 100/hr</h3>
@@ -128,7 +131,7 @@
 					<p class="tk-proxima-nova price"><img src="assets/dollars.png" />50/hr</p>
 				</div>
 				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 info info-pic">
-					<img class="avatar" src="assets/danno.png" />
+					<img class="thumb avatar" src="assets/danno.png" />
 					<p class="tutor-name">John Doe</p>
 				</div>
 				</span>
@@ -371,7 +374,13 @@
 		    //no mouseleave event on mobile
 		});
 
-
-
 	</script>
+<script>
+$('#detail1 > .button').hover(function(){
+	$('#tutor1 > .tutor-info > a > .tutor-pic').css("opacity","0.7");
+		}, function() {
+	$('#tutor1 > .tutor-info > a > .tutor-pic').css("opacity","1.0");
+	}
+);
+</script>
 		

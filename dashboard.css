@@ -1,3 +1,23 @@
+.detail > .button{
+color: rgb(66, 66, 66);
+background: #ffdf88 url('http://lorenzwoehr.com/assets/images/info.png') 90% 50% no-repeat;
+font-weight: 400;
+text-decoration: none;
+border-radius: 20px;
+cursor: pointer;
+padding: 8px 33px 8px 17px;
+margin: 0 auto;
+position: absolute;
+margin-left: -47px;
+top: 409px;
+z-index: 999999;
+}
+.detail > .button:hover{
+	background-color:#F3D278;
+}
+#tutor1 > .tutor-info > a > .tutor-pic{
+	opacity:1.0;
+}
 /*header*/
 body{
 	padding-top:65px;
