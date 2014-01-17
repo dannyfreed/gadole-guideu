@@ -16,7 +16,7 @@
 
 </head>
 
-<body>
+<body> 
 	<header class="navbar-fixed-top">
 		<nav class="navbar navbar-fixed-top" role="navigation">
 			<div class="head col-xs-2 col-sm-2 col-md-2 col-lg-2">
@@ -73,7 +73,8 @@
 		<h1 class="tk-proxima-nova dashboard">Dashboard</h1>
 	</section>
 	<section class="recent-tutors">
-		<h1 class="tk-proxima-nova">Your Tutors</h1>
+		<!--ONLY SHOW IF USER HAS BOOKED AT LEAST 1 TUTOR SO FAR-->
+		<!--<h1 class="tk-proxima-nova">Your Tutors</h1>
 
 		<ul class="recent-tutors-list ourHolder container">
 			<li id="tutor1"> 
@@ -125,7 +126,18 @@
 				</div>
 			</li>
 		</ul>
-		<a class="tk-proxima-nova browse-more" href="results.html">Browse More</a>
+		<a class="tk-proxima-nova browse-more" href="results.html">Browse More</a>-->
+
+		<!--SHOW IF USER HAS NOT BOOKED ANY TUTORS YET-->
+		<h1 class="tk-proxima-nova"> Find Your First Tutor Today!</h1>
+		<img class="empty-face img-responsive" src="assets/empty-face.png" />
+
+		<form class="animated tada form-inline">
+			<div class="form-group">
+				<input type="text" placeholder="What do you need help with?" class="tk-proxima-nova empty-search">
+				<button class="tk-proxima-nova empty-search-button" type="submit">Find Tutors</button>
+			</div>
+		</form>
 	</section>
 	<section class="upcoming-sessions">
 		<h1 class="tk-proxima-nova">Upcoming Sessions</h1>
@@ -142,8 +154,9 @@
 				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 info info-pic">
 					<img class="thumb avatar" src="assets/danno.png" />
 					<p class="tk-proxima-nova tk-proxima-nova tutor-name">John Doe</p>
-					<a class="tk-proxima-nova upcoming-cancel" href="#">Cancel</a>
-					<a class="tk-proxima-nova upcoming-message" href="#">Message</a>
+					<a class="tk-proxima-nova upcoming-message" href="#"><i class="fa fa-comment"></i></a>
+					<a class="tk-proxima-nova upcoming-cancel" href="#"><i class="fa fa-times"></i></a>
+					<a class="tk-proxima-nova upcoming-reschedule" href="booking.html"><i class="fa fa-calendar"></i></a>
 				</div>
 				</span>
 			</div>
@@ -160,8 +173,9 @@
 				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 info info-pic">
 					<img class="avatar" src="assets/danno.png" />
 					<p class="tk-proxima-nova tk-proxima-nova tutor-name">John Doe</p>
-					<a class="tk-proxima-nova upcoming-cancel" href="#">Cancel</a>
-					<a class="tk-proxima-nova upcoming-message" href="#">Message</a>
+					<a class="tk-proxima-nova upcoming-message" href="#"><i class="fa fa-comment"></i></a>
+					<a class="tk-proxima-nova upcoming-cancel" href="#"><i class="fa fa-times"></i></a>
+					<a class="tk-proxima-nova upcoming-reschedule" href="booking.html"><i class="fa fa-calendar"></i></a>
 				</div>
 				</span>
 			</div>
@@ -178,8 +192,9 @@
 				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 info info-pic">
 					<img class="avatar" src="assets/danno.png" />
 					<p class="tk-proxima-nova tk-proxima-nova tutor-name">John Doe</p>
-					<a class="tk-proxima-nova upcoming-cancel" href="#">Cancel</a>
-					<a class="tk-proxima-nova upcoming-message" href="#">Message</a>
+					<a class="tk-proxima-nova upcoming-message" href="#"><i class="fa fa-comment"></i></a>
+					<a class="tk-proxima-nova upcoming-cancel" href="#"><i class="fa fa-times"></i></a>
+					<a class="tk-proxima-nova upcoming-reschedule" href="booking.html"><i class="fa fa-calendar"></i></a>
 				</div>
 				</span>
 			</div>
@@ -196,8 +211,9 @@
 				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 info info-pic">
 					<img class="avatar" src="assets/danno.png" />
 					<p class="tk-proxima-nova tk-proxima-nova tutor-name">Jane Doe</p>
-					<a class="tk-proxima-nova upcoming-cancel" href="#">Cancel</a>
-					<a class="tk-proxima-nova upcoming-message" href="#">Message</a>
+					<a class="tk-proxima-nova upcoming-message" href="#"><i class="fa fa-comment"></i></a>
+					<a class="tk-proxima-nova upcoming-cancel" href="#"><i class="fa fa-times"></i></a>
+					<a class="tk-proxima-nova upcoming-reschedule" href="booking.html"><i class="fa fa-calendar"></i></a>
 				</div>
 				</span>
 			</div>
@@ -384,7 +400,20 @@
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
-
+<!-- Modal -->
+<div class="modal fade" id="addReview" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="tk-proxima-nova modal-title" id="myModalLabel">View Session</h4>
+      </div>
+      <div class="modal-body">	
+				<p class="review-rating">starss</p>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 	</body>
 
 	<script>
@@ -474,8 +503,13 @@ $('#detail4 > .button').hover(function(){
 $(':radio').change(
   function(){
     var starChoice = $(this).val();
-    alert(starChoice);
+    $('#addReview').modal('show');
   } 
 );
+</script>
+<script>
+$('.upcoming-cancel').click(function(){
+	confirm("Are you sure you want to cancel this session?");
+})
 </script>
 		

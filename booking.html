@@ -11,7 +11,7 @@
 
 <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"> <!--icon typeface-->
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 
 </head>
@@ -60,7 +60,7 @@
     			</div>
 		</nav>
 	</header>
-	
+
 <script>
 	$( ".user-pic > a, .login-box" ).hover(function() {
 		$('.login-box').stop(true, true).delay(200).fadeIn(200);
@@ -695,8 +695,8 @@
 			                    <li class="discover"></li>
 			                </ul>
 			            <div class="tk-proxima-nova form-group">
-			                <label for="card_number">Card number</label>
-			                <input type="name" name="card_number" id="card_number">
+			                <label for="card_number_new">Card number</label>
+			                <input type="name" name="card_number" id="card_number_new">
 			            </div> 
 		                
 		            	<div class="tk-proxima-nova form-group">
@@ -781,6 +781,33 @@
 			$('.discover').removeClass('grayed');
 		}		
 		if ( $('#card_number').length == 0 ){
+			$('.cards > li').removeClass('grayed');
+		}
+	});
+	</script>
+			<script>
+	$('#card_number_new').keyup(function(){
+		var card = ($(this).val());
+		var VisaValidator = card.substring(0,1);
+		var MastercardAmexValidator = card.substring(0,2);
+		var DiscoverValidator = card.substring(0,4);
+		if (VisaValidator == "4"){
+			$('.cards > li').addClass('grayed');
+			$('.visa').removeClass('grayed');
+		}
+		if (MastercardAmexValidator == "51" || MastercardAmexValidator == "52" || MastercardAmexValidator == "53" || MastercardAmexValidator == "54" || MastercardAmexValidator == "55"){
+			$('.cards > li').addClass('grayed');
+			$('.mastercard').removeClass('grayed');
+		}
+		if (MastercardAmexValidator == "34" || MastercardAmexValidator == "37"){
+			$('.cards > li').addClass('grayed');
+			$('.amex').removeClass('grayed');
+		}	
+		if (MastercardAmexValidator == "65" || DiscoverValidator == "6011"){
+			$('.cards > li').addClass('grayed');
+			$('.discover').removeClass('grayed');
+		}		
+		if ( $('#card_number_new').length == 0 ){
 			$('.cards > li').removeClass('grayed');
 		}
 	});
