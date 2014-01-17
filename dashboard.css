@@ -243,6 +243,53 @@ section{
 section > h1{
 	color:#5d5d5e;
 }
+.sub-nav{
+position: fixed;
+width: 100%;
+z-index: 999;
+}
+.sub-nav > div > a{
+	color:white;
+	font-size:1.2em;
+}
+.col-24 > img{
+	height: 35px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.col-19{
+	width:19%;
+	display:inline-block;
+	float:left;
+	position:relative;
+	text-align:center;
+	background:#557cab;
+	padding:1.5em;
+	max-height:70px;
+	border-left: 2px solid #334b69;
+	border-right:2px solid #334b69;
+	border-bottom: 4px solid #334b69;
+}
+.col-24{
+	width:24%;
+	height: 70px;
+	padding-top:2px;
+	display:inline-block;
+	float:left;
+	position:relative;
+	text-align:center;
+	background:#557cab;
+	border-left: 2px solid #334b69;
+	border-right:2px solid #334b69;
+	border-bottom: 4px solid #334b69;
+}
+.toolbox > li{
+	display:inline;
+	background:#557cab;
+	border:3px solid #334b69;
+	width:100%;
+}
 .top{
 	text-align: center;
 	padding-top:2em;
@@ -250,6 +297,7 @@ section > h1{
 	border-bottom: 1px solid #dadfe1;
 }
 .recent-tutors{
+	padding-top:66px; /*for sub-nav*/
 	zoom:1;
 	overflow:hidden;
 	background-color:#f6f8f8;
