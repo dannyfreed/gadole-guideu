@@ -243,57 +243,55 @@ section{
 section > h1{
 	color:#5d5d5e;
 }
-.sub-nav{
-position: fixed;
-width: 100%;
-z-index: 999;
+.quick-links > button{
+	background: transparent;
+border: 0;
+display: inline-block;
+height: 4em;
+font-size:1.3em;
+color:white;
+width: 21%;
 }
-.sub-nav > div > a{
+.stick > button:hover{
+	background:#334b69;
+}
+.quick-links > a > div{
+	height: 65px;
+	padding-top: 20px;
+	display: inline-block;
+}
+.quick-links > a{
+	font-size:1.3em;
+	display:inline-block;
 	color:white;
-	font-size:1.2em;
+	width: 21%;
 }
-.col-24 > img{
-	height: 35px;
-	display: block;
+.quick-links > a:hover{
+	color:rgb(231, 231, 231);
+	text-decoration: none;
+}
+.quick-links{
+	transition:background .5s ease-in-out;
+	width: 100%%;
 	margin-left: auto;
 	margin-right: auto;
+	z-index: 99;
 }
-.col-19{
-	width:19%;
-	display:inline-block;
-	float:left;
-	position:relative;
-	text-align:center;
-	background:#557cab;
-	padding:1.5em;
-	max-height:70px;
-	border-left: 2px solid #334b69;
-	border-right:2px solid #334b69;
-	border-bottom: 4px solid #334b69;
+.unstick{
+	background:#91A5BE;
 }
-.col-24{
-	width:24%;
-	height: 70px;
-	padding-top:2px;
-	display:inline-block;
-	float:left;
-	position:relative;
-	text-align:center;
-	background:#557cab;
-	border-left: 2px solid #334b69;
-	border-right:2px solid #334b69;
-	border-bottom: 4px solid #334b69;
+.stick {
+position: fixed;
+top: 65px;
+text-align: center;
+	background: #557cab;
+width:100%;
 }
-.toolbox > li{
-	display:inline;
-	background:#557cab;
-	border:3px solid #334b69;
-	width:100%;
-}
+
 .top{
 	text-align: center;
 	padding-top:2em;
-	padding-bottom:1em;
+	padding-bottom:3em;
 	border-bottom: 1px solid #dadfe1;
 }
 .recent-tutors{

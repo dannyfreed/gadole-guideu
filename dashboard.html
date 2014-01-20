@@ -68,28 +68,17 @@
 		$('.login-box').stop(true, true).delay(200).fadeOut(200);
 	});
 </script>
-	<section class="sub-nav">
-			<div class="col-19">
-				<a class="tk-proxima-nova" href="#">Payment Info</a>
-			</div>
-			<div class="col-19">
-				<a class="tk-proxima-nova" href="#">Personal Info</a>
-			</div>
-			<div class="dash col-24">
-				<a class="tk-proxima-nova" href="#">Dashboard</a>
-				<img class="dash-icon" src="assets/dashboard.png" />
-			</div>
-			<div class="col-19">
-				<a class="tk-proxima-nova" href="#">Refer a Friend</a>
-			</div>
-			<div class="col-19">
-				<a class="tk-proxima-nova" href="#">Support</a>
-			</div>
-	</section>
-	<!--<section class="top">
+	<section class="top">
 		<img class="dashboard-icon" src="assets/dashboard.png" alt="dashboard">
 		<h1 class="tk-proxima-nova dashboard">Dashboard</h1>
-	</section>-->
+		<div id="sticker" class="quick-links unstick">
+			<a class="tk-proxima-nova" href="#"><div><i class="fa fa-credit-card"></i> Payment Info</div></a>
+			<a class="tk-proxima-nova" href="#"><div><i class="fa fa-user"></i> Personal Profile</div></a>
+			<a class="tk-proxima-nova" href="#"><div><i class="fa fa-heart"></i> Refer A Friend</div></a>
+			<a class="tk-proxima-nova" href="#"><div><i class="fa fa-question-circle"></i> Support Center</div></a>
+		</div>
+
+	</section>
 	<section class="recent-tutors">
 		<!--ONLY SHOW IF USER HAS BOOKED AT LEAST 1 TUTOR SO FAR-->
 		<!--<h1 class="tk-proxima-nova">Your Tutors</h1>
@@ -530,4 +519,63 @@ $('.upcoming-cancel').click(function(){
 	confirm("Are you sure you want to cancel this session?");
 })
 </script>
-		
+<script>
+$('#sub-one > a').hover(function(){
+	$('#sub-one').css("background","#334b69");
+}, function(){
+	$('#sub-one').css("background","#557cab");
+});
+</script>
+<script>
+$('#sub-two > a').hover(function(){
+	$('#sub-two').css("background","#334b69");
+}, function(){
+	$('#sub-two').css("background","#557cab");
+});
+</script>
+<script>
+$('#sub-three > a').hover(function(){
+	$('#sub-three').css("background","#334b69");
+}, function(){
+	$('#sub-three').css("background","#557cab");
+});
+</script>
+<script>
+$('#sub-four > a').hover(function(){
+	$('#sub-four').css("background","#334b69");
+}, function(){
+	$('#sub-four').css("background","#557cab");
+});
+</script>
+<script>
+$('#sub-five > a').hover(function(){
+	$('#sub-five').css("background","#334b69");
+}, function(){
+	$('#sub-five').css("background","#557cab");
+});
+</script>
+
+<!--sticky subnav-->
+<script type="text/javascript">
+$(document).ready(function() {
+	var s = $(".quick-links");
+	var pos = s.position();	
+	//var stickermax = $(document).outerHeight() - $("footer").outerHeight() - s.outerHeight() - 0; //40 value is the total of the top and bottom margin
+	$(window).scroll(function() {
+		var windowpos = $(window).scrollTop();
+		//s.html("Distance from top:" + pos.top + "<br />Scroll position: " + windowpos);
+		if (windowpos >= pos.top - 65 /*&& windowpos < stickermax*/) {
+			s.removeClass("unstick");
+			s.addClass("stick"); //stick it
+		} /*else if (windowpos >= stickermax) {
+			s.removeClass("stick"); //un-stick
+			s.css({position: "relative"}); //set sticker right above the footer
+			
+		} */else {
+			s.removeClass("stick"); //top of page
+			s.addClass("unstick");
+		}
+	});
+	//alert(stickermax); //uncomment to show max sticker postition value on doc.ready
+});
+</script>
