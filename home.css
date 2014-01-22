@@ -87,6 +87,7 @@ line-height: 16px;
 margin: 0;
 text-transform: uppercase;
 font-size: 11px;
+border-radius:4px;
 }
 .become-tutor-header a:hover{
 	background-color:white;
@@ -199,7 +200,8 @@ text-transform: uppercase;
 font-size: 11px;
 }
 #signup{
-	-webkit-border-top-right-radius: 0;
+border-radius: 4px;
+-webkit-border-top-right-radius: 0;
 -moz-border-radius-topright: 0;
 border-top-right-radius: 0;
 -webkit-border-bottom-right-radius: 0;
@@ -208,7 +210,8 @@ border-bottom-right-radius: 0;
 border-right: 0;
 }
 #login{
-	-webkit-border-top-left-radius: 0;
+border-radius: 4px;
+-webkit-border-top-left-radius: 0;
 -moz-border-radius-topleft: 0;
 border-top-left-radius: 0;
 -webkit-border-bottom-left-radius: 0;
@@ -270,6 +273,10 @@ transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 	border:1px solid #cccccc;
 	height: 65px;
 	font-size: 1.2em;
+}
+.find-tutors:hover{
+	color:white;
+	background-color:#2BAC5A;
 }
 .howitworks{
 	padding-top:2em;
