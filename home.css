@@ -9,7 +9,7 @@
 .signup-flyover{
 	background-color:white;
 	width: 279px;
-	height: 351px;
+	height: auto;
 	position:relative;
 	border-radius:5px;
 	text-align:center;
