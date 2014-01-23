@@ -1000,6 +1000,7 @@ input[type="radio"]{
 	}
 	.additional-comment-label{
 		margin-top:1em;
+		font-weight:600;
 		display:block;
 	}
 	.submit-review-form > textarea{

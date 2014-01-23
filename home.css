@@ -1,3 +1,60 @@
+/*signup-popover*/
+.signup-box{
+	position: absolute;
+	top: 60px;
+	right: 81px;
+	z-index: 99999;
+	display:none;
+}
+.signup-flyover{
+	background-color:white;
+	width: 279px;
+	height: 315px;
+	position:relative;
+	border-radius:5px;
+	text-align:center;
+	padding:2em;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.29);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,0.29);
+	box-shadow: 0 1px 2px rgba(0,0,0,0.29);
+}
+.js-signup-form > input{
+	width: 100%;
+	padding: 0px 10px;
+	margin: 0 0 10px 0;
+	font-size: 14px;
+	-webkit-font-smoothing: antialiased;
+	height: 36px;
+	color: #222;
+	border: solid 1px #d7dfe0;
+	background-color: white;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	-webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,0.08);
+	-moz-box-shadow: inset 0 1px 3px rgba(0,0,0,0.08);
+	box-shadow: inset 0 1px 3px rgba(0,0,0,0.08);
+}
+.js-signup-form > h4{
+	margin: 0;
+margin-bottom: 1.5em;
+}
+
+.become-tutor-signup{
+	font-size: 14px;
+color: #4f78b6;
+margin: 15px 0 0 0;
+display:block;
+}
+#signup.clicked{
+	color: rgb(73, 73, 73);
+	background-color: #f7fbfc;
+}
+.signup-box > .login-button{
+	margin-top: .6em;
+}
+
+/*end signup popover*/
 /*login-popover*/
 .login-box{
 	position: absolute;
@@ -648,6 +705,9 @@ li.item span{
 	color:white;
 	font-size:3em;
 	text-transform: uppercase;
+}
+li.item span:hover{
+	color:#579eee;
 }
 .browse-more{
 	margin-left:auto;
