@@ -9,7 +9,7 @@
 .signup-flyover{
 	background-color:white;
 	width: 279px;
-	height: 315px;
+	height: 351px;
 	position:relative;
 	border-radius:5px;
 	text-align:center;
@@ -39,6 +39,9 @@
 	margin: 0;
 margin-bottom: 1.5em;
 }
+.js-signup-form > p{
+	font-size:12px;
+}
 
 .become-tutor-signup{
 	font-size: 14px;
@@ -53,8 +56,8 @@ display:block;
 .signup-box > .login-button{
 	margin-top: .6em;
 }
-
 /*end signup popover*/
+
 /*login-popover*/
 .login-box{
 	position: absolute;
