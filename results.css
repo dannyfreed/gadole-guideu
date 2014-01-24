@@ -547,6 +547,126 @@ overflow:scroll;
   display: block;
 }
 
+.review-divider{
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	border-top: 1px dotted #eeeeee;
+}
+.review-text{
+	text-align:left;
+}
+.avatar{
+	height:100px;
+	width:100px;
+	border-radius:50%;
+	box-shadow:0px 1px 4px rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.4);
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:2em;
+}
+.modal-body{
+	text-align:center;
+	zoom:1;
+	overflow:hidden;
+}
+#reviews > .modal-dialog > .modal-content > .modal-header > .modal-title{
+	text-align:center;
+	font-weight:600;
+}
+	.four-rating {
+        overflow: hidden;
+        display: block;
+		text-align:left;
+      }
+      .four-rating > p {
+      	display:inline-block;
+      	font-weight:600;
+      }
+      .rating-input {
+          position: absolute;
+          left: 0;
+          top: -50px;
+      }
+      .helpfulness-rating:hover .rating-star:hover,
+      .helpfulness-rating:hover .rating-star:hover ~ .rating-star,
+      .helpfulness-rating > .rating-input:checked ~ .rating-star {
+          background-position: 0 0;
+      }
+      .clarity-rating:hover .rating-star:hover,
+      .clarity-rating:hover .rating-star:hover ~ .rating-star,
+      .clarity-rating > .rating-input:checked ~ .rating-star {
+          background-position: 0 0;
+      }
+      .interest-rating:hover .rating-star:hover,
+      .interest-rating:hover .rating-star:hover ~ .rating-star,
+      .interest-rating > .rating-input:checked ~ .rating-star {
+          background-position: 0 0;
+      }
+      .professionalism-rating:hover .rating-star:hover,
+      .professionalism-rating:hover .rating-star:hover ~ .rating-star,
+      .professionalism-rating > .rating-input:checked ~ .rating-star {
+          background-position: 0 0;
+      }
+
+      .helpfulness-rating > label,
+      .helpfulness-rating:hover .helpfulness {
+          float: right;
+          display: block;
+          cursor:pointer;
+          width: 24px;
+          height: 24px;
+          background: url('http://www.gadole.com/guideu/assets/helpfulness-rating.png') 0 -23px;
+      }
+      .clarity-rating > label,
+      .clarity-rating:hover .clarity {
+          float: right;
+          display: block;
+          cursor:pointer;
+          width: 24px;
+          height: 24px;
+          background: url('http://www.gadole.com/guideu/assets/clarity-rating.png') 0 -23px;
+      }
+      .interest-rating > label,
+      .interest-rating:hover .interest {
+          float: right;
+          display: block;
+          cursor:pointer;
+          width: 24px;
+          height: 24px;
+          background: url('http://www.gadole.com/guideu/assets/interest-rating.png') 0 -23px;
+      }
+      .professionalism-rating > label,
+      .professionalism-rating:hover .professionalism {
+          float: right;
+          display: block;
+          cursor:pointer;
+          width: 24px;
+          height: 24px;
+          background: url('http://www.gadole.com/guideu/assets/professional-rating.png') 0 -23px;
+      }
+      input[type="radio"]{
+      	display:none;
+      }
+}
+.additional-comments > p{
+	width: 70%;
+margin-left: auto;
+margin-right: auto;
+margin-top: 2em;
+font-style: italic;
+text-align: left;
+}
+.reviewer{
+	font-weight:600;
+	text-align:center;
+}
+#review-dialog{
+	width:80%;
+}
+
 /*footer*/
 footer{
 	padding-top:3em;
