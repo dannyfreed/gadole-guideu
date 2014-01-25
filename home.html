@@ -53,6 +53,12 @@
           <input required class="tk-proxima-nova" name="fullName" placeholder="Full Name" type="text">
           <input required class="tk-proxima-nova" name="email" placeholder="Your email address" type="email">
           <input required class="tk-proxima-nova" name="password" placeholder="Your password" type="password">
+          <div class="tk-proxima-nova radio">
+            <input id="student" type="radio" name="user-type" value="student">
+            <label for="student">Student</label>
+            <input id="tutor" type="radio" name="user-type" value="tutor">
+            <label for="tutor">Tutor</label>
+          </div>
           <p class="tk-proxima-nova">By clicking Join Now, you are agreeing to our <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a></p>
           <button class="tk-proxima-nova js-submit-login login-button">Join Now</button>
         </form>
@@ -66,7 +72,7 @@
   <div class="animated tada">
   <form class="search-form form-inline" role="form">
       <div class="form-group">
-        <input type="text" class="tk-proxima-nova search-field" placeholder="What do you need help with?">
+        <input autofocus type="text" class="tk-proxima-nova search-field" placeholder="What do you need help with?">
       </div>
       <a style="padding-top: 20px;" type="submit" href="results.html" class="tk-proxima-nova btn find-tutors">Find Tutors</a>
     </form>
@@ -278,4 +284,7 @@ $('#signup').toggle(function(){
       $('.signup-box').css("display", "none"); //close signup box
       $('#signup').removeClass("clicked");  //remove white background from signup button
 });
+</script>
+<script>
+$(document).ready(function{ $('.search-field').focus(); })
 </script>
