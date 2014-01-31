@@ -1,0 +1,1307 @@
+<!DOCTYPE HTML>
+<head>
+<title>Availability</title>
+<link rel="stylesheet" href="availability.css" type="text/css" />
+<link rel="stylesheet" href="bootstrap.css" type="text/css" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script type="text/javascript" src="//use.typekit.net/xfb1bml.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"> <!--icon typeface-->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<style>
+.c-col-xs-3, .c-col-sm-1, .c-col-md-1, .c-col-lg-1, .c-col-xs-2, .c-col-sm-2, .c-col-md-2, .c-col-lg-2, .c-col-xs-3, .c-col-sm-3, .c-col-md-3, .c-col-lg-3, .c-col-xs-4, .c-col-sm-4, .c-col-md-4, .c-col-lg-4, .c-col-xs-5, .c-col-sm-5, .c-col-md-5, .c-col-lg-5, .c-col-xs-3, .c-col-s1-6, .col1md-6, .c1l-lg-6, .c-col-xs-7, .c-col-sm-7, .c-col-md-7, .c-col-lg-7 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.c-col-xs-3, .c-col-xs-2, .c-col-xs-3, .c-col-xs-4, .c-col-xs-5, .c-col-xs-3, .c-col-x1-7 {
+  float: left;
+}
+.c-col-xs-7 {
+  width: 100%;
+}
+.c-col-xs-3 {
+  wid1h: 85.71128571428171%;
+}
+.c-col-xs-5 {
+  width: 71.42857142857143%;
+}
+.c-col-xs-4 {
+  width: 57.14285714285714%;
+}
+.c-col-xs-3 {
+  width: 42.857142857142854%;
+}
+.c-col-xs-2 {
+  width: 28.57142857142857%;
+}
+.c-col-xs-3 {
+  width: 14.285714285714285%;
+}
+.c-col-xs-pull-7 {
+  right: 100%;
+}
+.c-col-xs-pull-6 {
+  right: 85.71428571428571%;
+}
+.c-col-xs-pull-5 {
+  right: 71.42857142857143%;
+}
+.c-col-xs-pull-4 {
+  right: 57.14285714285714%;
+}
+.c-col-xs-pull-3 {
+  right: 42.857142857142854%;
+}
+.c-col-xs-pull-2 {
+  right: 28.57142857142857%;
+}
+.c-col-xs-pull-1 {
+  right: 14.285714285714285%;
+}
+.c-col-xs-pull-0 {
+  right: 0%;
+}
+.c-col-xs-push-7 {
+  left: 100%;
+}
+.c-col-xs-push-6 {
+  left: 85.71428571428571%;
+}
+.c-col-xs-push-5 {
+  left: 71.42857142857143%;
+}
+.c-col-xs-push-4 {
+  left: 57.14285714285714%;
+}
+.c-col-xs-push-3 {
+  left: 42.857142857142854%;
+}
+.c-col-xs-push-2 {
+  left: 28.57142857142857%;
+}
+.c-col-xs-push-1 {
+  left: 14.285714285714285%;
+}
+.c-col-xs-push-0 {
+  left: 0%;
+}
+.c-col-xs-offset-7 {
+  margin-left: 100%;
+}
+.c-col-xs-offset-6 {
+  margin-left: 85.71428571428571%;
+}
+.c-col-xs-offset-5 {
+  margin-left: 71.42857142857143%;
+}
+.c-col-xs-offset-4 {
+  margin-left: 57.14285714285714%;
+}
+.c-col-xs-offset-3 {
+  margin-left: 42.857142857142854%;
+}
+.c-col-xs-offset-2 {
+  margin-left: 28.57142857142857%;
+}
+.c-col-xs-offset-1 {
+  margin-left: 14.285714285714285%;
+}
+.c-col-xs-offset-0 {
+  margin-left: 0%;
+}
+@media (min-width: 768px) {
+  .c-col-sm-1, .c-col-sm-2, .c-col-sm-3, .c-col-sm-4, .c-col-sm-5, .c-col-sm-6, .c-col-sm-7 {
+    float: left;
+  }
+  .c-col-sm-7 {
+    width: 100%;
+  }
+  .c-col-sm-6 {
+    width: 85.71428571428571%;
+  }
+  .c-col-sm-5 {
+    width: 71.42857142857143%;
+  }
+  .c-col-sm-4 {
+    width: 57.14285714285714%;
+  }
+  .c-col-sm-3 {
+    width: 42.857142857142854%;
+  }
+  .c-col-sm-2 {
+    width: 28.57142857142857%;
+  }
+  .c-col-sm-1 {
+    width: 14.285714285714285%;
+  }
+  .c-col-sm-pull-7 {
+    right: 100%;
+  }
+  .c-col-sm-pull-6 {
+    right: 85.71428571428571%;
+  }
+  .c-col-sm-pull-5 {
+    right: 71.42857142857143%;
+  }
+  .c-col-sm-pull-4 {
+    right: 57.14285714285714%;
+  }
+  .c-col-sm-pull-3 {
+    right: 42.857142857142854%;
+  }
+  .c-col-sm-pull-2 {
+    right: 28.57142857142857%;
+  }
+  .c-col-sm-pull-1 {
+    right: 14.285714285714285%;
+  }
+  .c-col-sm-pull-0 {
+    right: 0%;
+  }
+  .c-col-sm-push-7 {
+    left: 100%;
+  }
+  .c-col-sm-push-6 {
+    left: 85.71428571428571%;
+  }
+  .c-col-sm-push-5 {
+    left: 71.42857142857143%;
+  }
+  .c-col-sm-push-4 {
+    left: 57.14285714285714%;
+  }
+  .c-col-sm-push-3 {
+    left: 42.857142857142854%;
+  }
+  .c-col-sm-push-2 {
+    left: 28.57142857142857%;
+  }
+  .c-col-sm-push-1 {
+    left: 14.285714285714285%;
+  }
+  .c-col-sm-push-0 {
+    left: 0%;
+  }
+  .c-col-sm-offset-7 {
+    margin-left: 100%;
+  }
+  .c-col-sm-offset-6 {
+    margin-left: 85.71428571428571%;
+  }
+  .c-col-sm-offset-5 {
+    margin-left: 71.42857142857143%;
+  }
+  .c-col-sm-offset-4 {
+    margin-left: 57.14285714285714%;
+  }
+  .c-col-sm-offset-3 {
+    margin-left: 42.857142857142854%;
+  }
+  .c-col-sm-offset-2 {
+    margin-left: 28.57142857142857%;
+  }
+  .c-col-sm-offset-1 {
+    margin-left: 14.285714285714285%;
+  }
+  .c-col-sm-offset-0 {
+    margin-left: 0%;
+  }
+}
+@media (min-width: 992px) {
+  .c-col-md-1, .c-col-md-2, .c-col-md-3, .c-col-md-4, .c-col-md-5, .c-col-md-6, .c-col-md-7 {
+    float: left;
+  }
+  .c-col-md-7 {
+    width: 100%;
+  }
+  .c-col-md-6 {
+    width: 85.71428571428571%;
+  }
+  .c-col-md-5 {
+    width: 71.42857142857143%;
+  }
+  .c-col-md-4 {
+    width: 57.14285714285714%;
+  }
+  .c-col-md-3 {
+    width: 42.857142857142854%;
+  }
+  .c-col-md-2 {
+    width: 28.57142857142857%;
+  }
+  .c-col-md-1 {
+    width: 14.285714285714285%;
+  }
+  .c-col-md-pull-7 {
+    right: 100%;
+  }
+  .c-col-md-pull-6 {
+    right: 85.71428571428571%;
+  }
+  .c-col-md-pull-5 {
+    right: 71.42857142857143%;
+  }
+  .c-col-md-pull-4 {
+    right: 57.14285714285714%;
+  }
+  .c-col-md-pull-3 {
+    right: 42.857142857142854%;
+  }
+  .c-col-md-pull-2 {
+    right: 28.57142857142857%;
+  }
+  .c-col-md-pull-1 {
+    right: 14.285714285714285%;
+  }
+  .c-col-md-pull-0 {
+    right: 0%;
+  }
+  .c-col-md-push-7 {
+    left: 100%;
+  }
+  .c-col-md-push-6 {
+    left: 85.71428571428571%;
+  }
+  .c-col-md-push-5 {
+    left: 71.42857142857143%;
+  }
+  .c-col-md-push-4 {
+    left: 57.14285714285714%;
+  }
+  .c-col-md-push-3 {
+    left: 42.857142857142854%;
+  }
+  .c-col-md-push-2 {
+    left: 28.57142857142857%;
+  }
+  .c-col-md-push-1 {
+    left: 14.285714285714285%;
+  }
+  .c-col-md-push-0 {
+    left: 0%;
+  }
+  .c-col-md-offset-7 {
+    margin-left: 100%;
+  }
+  .c-col-md-offset-6 {
+    margin-left: 85.71428571428571%;
+  }
+  .c-col-md-offset-5 {
+    margin-left: 71.42857142857143%;
+  }
+  .c-col-md-offset-4 {
+    margin-left: 57.14285714285714%;
+  }
+  .c-col-md-offset-3 {
+    margin-left: 42.857142857142854%;
+  }
+  .c-col-md-offset-2 {
+    margin-left: 28.57142857142857%;
+  }
+  .c-col-md-offset-1 {
+    margin-left: 14.285714285714285%;
+  }
+  .c-col-md-offset-0 {
+    margin-left: 0%;
+  }
+}
+@media (min-width: 1200px) {
+  .c-col-lg-1, .c-col-lg-2, .c-col-lg-3, .c-col-lg-4, .c-col-lg-5, .c-col-lg-6, .c-col-lg-7 {
+    float: left;
+  }
+  .c-col-lg-7 {
+    width: 100%;
+  }
+  .c-col-lg-6 {
+    width: 85.71428571428571%;
+  }
+  .c-col-lg-5 {
+    width: 71.42857142857143%;
+  }
+  .c-col-lg-4 {
+    width: 57.14285714285714%;
+  }
+  .c-col-lg-3 {
+    width: 42.857142857142854%;
+  }
+  .c-col-lg-2 {
+    width: 28.57142857142857%;
+  }
+  .c-col-lg-1 {
+    width: 14.285714285714285%;
+  }
+  .c-col-lg-pull-7 {
+    right: 100%;
+  }
+  .c-col-lg-pull-6 {
+    right: 85.71428571428571%;
+  }
+  .c-col-lg-pull-5 {
+    right: 71.42857142857143%;
+  }
+  .c-col-lg-pull-4 {
+    right: 57.14285714285714%;
+  }
+  .c-col-lg-pull-3 {
+    right: 42.857142857142854%;
+  }
+  .c-col-lg-pull-2 {
+    right: 28.57142857142857%;
+  }
+  .c-col-lg-pull-1 {
+    right: 14.285714285714285%;
+  }
+  .c-col-lg-pull-0 {
+    right: 0%;
+  }
+  .c-col-lg-push-7 {
+    left: 100%;
+  }
+  .c-col-lg-push-6 {
+    left: 85.71428571428571%;
+  }
+  .c-col-lg-push-5 {
+    left: 71.42857142857143%;
+  }
+  .c-col-lg-push-4 {
+    left: 57.14285714285714%;
+  }
+  .c-col-lg-push-3 {
+    left: 42.857142857142854%;
+  }
+  .c-col-lg-push-2 {
+    left: 28.57142857142857%;
+  }
+  .c-col-lg-push-1 {
+    left: 14.285714285714285%;
+  }
+  .c-col-lg-push-0 {
+    left: 0%;
+  }
+  .c-col-lg-offset-7 {
+    margin-left: 100%;
+  }
+  .c-col-lg-offset-6 {
+    margin-left: 85.71428571428571%;
+  }
+  .c-col-lg-offset-5 {
+    margin-left: 71.42857142857143%;
+  }
+  .c-col-lg-offset-4 {
+    margin-left: 57.14285714285714%;
+  }
+  .c-col-lg-offset-3 {
+    margin-left: 42.857142857142854%;
+  }
+  .c-col-lg-offset-2 {
+    margin-left: 28.57142857142857%;
+  }
+  .c-col-lg-offset-1 {
+    margin-left: 14.285714285714285%;
+  }
+  .c-col-lg-offset-0 {
+    margin-left: 0%;
+  }
+}
+</style>
+</head>
+
+<body>
+	<header class="navbar-fixed-top">
+		<nav class="navbar navbar-fixed-top" role="navigation">
+			<div class="head col-xs-2 col-sm-2 col-md-2 col-lg-2">
+				<a style="color:white" class="navbar-brand" href="home.html">
+					<img src="assets/logo.png" />
+				</a>
+			</div>
+			<div class="head col-xs-6 col-sm-7 col-md-7 col-lg-7">
+				<form action="#" method="post" class="search-form form-inline" role="form">
+					<div class="form-group">
+			  			<input type="text" class="tk-proxima-nova search-field" placeholder="Search by tutor, subject, or course">
+			  		</div>
+			  	</form>
+		  	</div>
+		  	<div class="user-info head col-xs-4 col-sm-3 col-md-3 col-lg-3">
+		  		<!--if user-not-signed-in-->
+			  	<!--<span class="tk-proxima-nova signup-login">
+					<a href="#" id="signup">Signup</a>
+					<a href="#" id="login">Login</a>
+				</span>-->
+				<!--end if user-not-signed-in-->
+				<div class="credentials">
+					<div class="tk-proxima-nova user-name">
+						<span>Danny Freed </span>
+						<div class="coin">
+							<a href="#" class="tk-proxima-nova number-credits"><img src="assets/coin" />5 credits</a>
+						</div>
+					</div>
+				</div>
+				<div class="user-pic">
+					<a href="javascript:void(0);"><img src="assets/freed.png" /></a>
+				</div>
+			</div>
+			    <div class="login-box">
+			      	<div class="arrow">
+			      	</div>
+			      	<div class="login-flyover">
+			        	<div><a class="settings" href="#">Settings</a></div>
+			        	<div><a class="logout" href="#">Logout</a></div>
+			      	</div>
+    			</div>
+		</nav>
+	</header>
+
+<script>
+	$( ".user-pic > a, .login-box" ).hover(function() {
+		$('.login-box').stop(true, true).delay(200).fadeIn(200);
+			}, function() {
+		$('.login-box').stop(true, true).delay(200).fadeOut(200);
+	});
+</script>
+
+	<section class="booking-console">
+	<h5 class="tk-proxima-nova">Please select which days and times you will be available for tutoring. You will be able to confirm every appointment before it is finalized.</h5>
+		<form action="#" method="post">
+				<div class="c-col-xs-3 c-col-sm-1 c-col-md-1 c-col-lg-1 date date1">
+					<h2 class="tk-proxima-nova">Sunday</h2>
+					<div class="morning-time-slots time-slots">
+						<a class="back" href="#">Back</a>
+						<div class="times-wrapper morning">
+						<h3 class="tk-proxima-nova"><i class="fa fa-caret-down"></i>Morning</h3>
+
+							<ul class="morning-times times">
+								<li class="time">
+									<a href="#booking-fields" class="scroll" data-speed="500"><span class="time-name">9:45 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">8:00 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">:15 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">10:30 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">10:45 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">11:00 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">11:15 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">11:30 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">11:45 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">12:00 PM</span></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="afternoon-time-slots time-slots">
+						<a class="back" href="#">Back</a>
+						<div class="times-wrapper afternoon">
+						<h3 class="tk-proxima-nova"><i class="fa fa-caret-down"></i>Afternoon</h3>
+							<ul class="afternoon-times times">
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">12:30 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">12:45 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">1:00 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">1:15 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">1:30 PM</span></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="evening-time-slots time-slots">
+						<a class="back" href="#">Back</a>
+						<div class="times-wrapper evening">
+						<h3 class="tk-proxima-nova"><i class="fa fa-caret-down"></i>Evening</h3>
+							<ul class="evening-times times">
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">4:45 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">5:00 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">5:15 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">5:30 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">5:45 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">6:00 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">6:15 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">6:30 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">6:45 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">7:00 PM</span></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="timepicker morning-box">
+						<h3 class="tk-proxima-nova"><i class="fa fa-caret-right"></i>Morning</h3>
+
+					</div>
+					<div class="timepicker afternoon-box">
+						<h3 class="tk-proxima-nova"><i class="fa fa-caret-right"></i>Afternoon</h3>
+					</div>
+					<div class="timepicker evening-box">
+						<h3 class="tk-proxima-nova"><i class="fa fa-caret-right"></i></i>Evening</h3>
+
+					</div>
+				</div>
+				<div class="c-col-xs-3 c-col-sm-1 c-col-md-1 c-col-lg-1 date date2">
+					<h2 class="tk-proxima-nova">Monday</h2>
+					<div class="morning-time-slots time-slots">
+						<a class="back" href="#">Back</a>
+						<div class="times-wrapper morning">
+						<h3 class="tk-proxima-nova"><i class="fa fa-caret-down"></i>Morning</h3>
+
+							<ul class="morning-times times">
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">9:45 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">10:00 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">10:15 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">10:30 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">10:45 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">11:00 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">11:15 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">11:30 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">11:45 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">12:00 PM</span></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="afternoon-time-slots time-slots">
+						<a class="back" href="#">Back</a>
+						<div class="times-wrapper afternoon">
+						<h3 class="tk-proxima-nova"><i class="fa fa-caret-down"></i>Afternoon</h3>
+							<ul class="afternoon-times times">
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">12:30 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">12:45 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">1:00 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">1:15 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">1:30 PM</span></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="evening-time-slots time-slots">
+						<a class="back" href="#">Back</a>
+						<div class="times-wrapper evening">
+						<h3 class="tk-proxima-nova"><i class="fa fa-caret-down"></i>Evening</h3>
+
+							<ul class="evening-times times">
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">4:45 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">5:00 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">5:15 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">5:30 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">5:45 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">6:00 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">6:15 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">6:30 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">6:45 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">7:00 PM</span></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="timepicker morning-box">
+						<h3 class="tk-proxima-nova"><i class="fa fa-caret-right"></i>Morning</h3>
+
+					</div>
+					<div class="timepicker afternoon-box">
+						<h3 class="tk-proxima-nova"><i class="fa fa-caret-right"></i>Afternoon</h3>
+					</div>
+					<div class="timepicker evening-box">
+						<h3 class="tk-proxima-nova"><i class="fa fa-caret-right"></i></i>Evening</h3>
+
+					</div>
+				</div>
+				<div class="c-col-xs-3 c-col-sm-1 c-col-md-1 c-col-lg-1 date date3">
+					<h2 class="tk-proxima-nova date3">Tuesday</h2>
+					<div class="morning-time-slots time-slots">
+						<a class="back" href="#">Back</a>
+						<div class="times-wrapper morning">
+						<h3 class="tk-proxima-nova"><i class="fa fa-caret-down"></i>Morning</h3>
+
+							<ul class="morning-times times">
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">9:45 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">10:00 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">10:15 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">10:30 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">10:45 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">11:00 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">11:15 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">11:30 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">11:45 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">12:00 PM</span></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="afternoon-time-slots time-slots">
+						<a class="back" href="#">Back</a>
+						<div class="times-wrapper afternoon">
+						<h3 class="tk-proxima-nova"><i class="fa fa-caret-down"></i>Afternoon</h3>
+							<ul class="afternoon-times times">
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">12:30 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">12:45 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">1:00 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">1:15 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">1:30 PM</span></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="evening-time-slots time-slots">
+						<a class="back" href="#">Back</a>
+						<div class="times-wrapper evening">
+						<h3 class="tk-proxima-nova"><i class="fa fa-caret-down"></i>Evening</h3>
+
+							<ul class="evening-times times">
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">4:45 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">5:00 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">5:15 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">5:30 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">5:45 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">6:00 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">6:15 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">6:30 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">6:45 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">7:00 PM</span></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="timepicker morning-box">
+						<h3 class="tk-proxima-nova"><i class="fa fa-caret-right"></i>Morning</h3>
+
+					</div>
+					<div class="timepicker afternoon-box">
+						<h3 class="tk-proxima-nova"><i class="fa fa-caret-right"></i>Afternoon</h3>
+					</div>
+					<div class="timepicker evening-box">
+						<h3 class="tk-proxima-nova"><i class="fa fa-caret-right"></i></i>Evening</h3>
+
+					</div>
+				</div>
+				<div class="c-col-xs-3 c-col-sm-1 c-col-md-1 c-col-lg-1 date date4">
+					<h2 class="tk-proxima-nova">Wednesday</h2>
+					<div class="morning-time-slots time-slots">
+						<a class="back" href="#">Back</a>
+						<div class="times-wrapper morning">
+						<h3 class="tk-proxima-nova"><i class="fa fa-caret-down"></i>Morning</h3>
+
+							<ul class="morning-times times">
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">9:45 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">10:00 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">10:15 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">10:30 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">10:45 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">11:00 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">11:15 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">11:30 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">11:45 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">12:00 PM</span></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="afternoon-time-slots time-slots">
+						<a class="back" href="#">Back</a>
+						<div class="times-wrapper afternoon">
+						<h3 class="tk-proxima-nova"><i class="fa fa-caret-down"></i>Afternoon</h3>
+							<ul class="afternoon-times times">
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">12:30 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">12:45 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">1:00 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">1:15 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">1:30 PM</span></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="evening-time-slots time-slots">
+						<a class="back" href="#">Back</a>
+						<div class="times-wrapper evening">
+						<h3 class="tk-proxima-nova"><i class="fa fa-caret-down"></i>Evening</h3>
+
+							<ul class="evening-times times">
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">4:45 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">5:00 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">5:15 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">5:30 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">5:45 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">6:00 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">6:15 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">6:30 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">6:45 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">7:00 PM</span></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="timepicker morning-box">
+						<h3 class="tk-proxima-nova"><i class="fa fa-caret-right"></i>Morning</h3>
+
+					</div>
+					<div class="timepicker afternoon-box">
+						<h3 class="tk-proxima-nova"><i class="fa fa-caret-right"></i>Afternoon</h3>
+					</div>
+					<div class="timepicker evening-box">
+						<h3 class="tk-proxima-nova"><i class="fa fa-caret-right"></i></i>Evening</h3>
+
+					</div>
+				</div>
+				</div>
+				<div class="c-col-xs-3 c-col-sm-1 c-col-md-1 c-col-lg-1 date date1">
+					<h2 class="tk-proxima-nova">Thursday</h2>
+					<div class="morning-time-slots time-slots">
+						<a class="back" href="#">Back</a>
+						<div class="times-wrapper morning">
+						<h3 class="tk-proxima-nova"><i class="fa fa-caret-down"></i>Morning</h3>
+
+							<ul class="morning-times times">
+								<li class="time">
+									<a href="#booking-fields" class="scroll" data-speed="500"><span class="time-name">9:45 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">10:00 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">10:15 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">10:30 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">10:45 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">11:00 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">11:15 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">11:30 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">11:45 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">12:00 PM</span></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="afternoon-time-slots time-slots">
+						<a class="back" href="#">Back</a>
+						<div class="times-wrapper afternoon">
+						<h3 class="tk-proxima-nova"><i class="fa fa-caret-down"></i>Afternoon</h3>
+							<ul class="afternoon-times times">
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">12:30 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">12:45 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">1:00 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">1:15 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">1:30 PM</span></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="evening-time-slots time-slots">
+						<a class="back" href="#">Back</a>
+						<div class="times-wrapper evening">
+						<h3 class="tk-proxima-nova"><i class="fa fa-caret-down"></i>Evening</h3>
+
+							<ul class="evening-times times">
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">4:45 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">5:00 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">5:15 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">5:30 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">5:45 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">6:00 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">6:15 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">6:30 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">6:45 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">7:00 PM</span></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="timepicker morning-box">
+						<h3 class="tk-proxima-nova"><i class="fa fa-caret-right"></i>Morning</h3>
+
+					</div>
+					<div class="timepicker afternoon-box">
+						<h3 class="tk-proxima-nova"><i class="fa fa-caret-right"></i>Afternoon</h3>
+					</div>
+					<div class="timepicker evening-box">
+						<h3 class="tk-proxima-nova"><i class="fa fa-caret-right"></i></i>Evening</h3>
+
+					</div>
+				</div>
+				<div class="c-col-xs-3 c-col-sm-1 c-col-md-1 c-col-lg-1 date date1">
+					<h2 class="tk-proxima-nova">Friday</h2>
+					<div class="morning-time-slots time-slots">
+						<a class="back" href="#">Back</a>
+						<div class="times-wrapper morning">
+						<h3 class="tk-proxima-nova"><i class="fa fa-caret-down"></i>Morning</h3>
+
+							<ul class="morning-times times">
+								<li class="time">
+									<a href="#booking-fields" class="scroll" data-speed="500"><span class="time-name">9:45 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">10:00 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">10:15 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">10:30 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">10:45 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">11:00 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">11:15 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">11:30 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">11:45 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">12:00 PM</span></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="afternoon-time-slots time-slots">
+						<a class="back" href="#">Back</a>
+						<div class="times-wrapper afternoon">
+						<h3 class="tk-proxima-nova"><i class="fa fa-caret-down"></i>Afternoon</h3>
+							<ul class="afternoon-times times">
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">12:30 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">12:45 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">1:00 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">1:15 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">1:30 PM</span></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="evening-time-slots time-slots">
+						<a class="back" href="#">Back</a>
+						<div class="times-wrapper evening">
+						<h3 class="tk-proxima-nova"><i class="fa fa-caret-down"></i>Evening</h3>
+
+							<ul class="evening-times times">
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">4:45 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">5:00 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">5:15 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">5:30 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">5:45 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">6:00 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">6:15 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">6:30 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">6:45 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">7:00 PM</span></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="timepicker morning-box">
+						<h3 class="tk-proxima-nova"><i class="fa fa-caret-right"></i>Morning</h3>
+
+					</div>
+					<div class="timepicker afternoon-box">
+						<h3 class="tk-proxima-nova"><i class="fa fa-caret-right"></i>Afternoon</h3>
+					</div>
+					<div class="timepicker evening-box">
+						<h3 class="tk-proxima-nova"><i class="fa fa-caret-right"></i></i>Evening</h3>
+
+					</div>
+				</div>
+				<div class="c-col-xs-3 c-col-sm-1 c-col-md-1 c-col-lg-1 date date1">
+					<h2 class="tk-proxima-nova">Saturday</h2>
+					<div class="morning-time-slots time-slots">
+						<a class="back" href="#">Back</a>
+						<div class="times-wrapper morning">
+						<h3 class="tk-proxima-nova"><i class="fa fa-caret-down"></i>Morning</h3>
+
+							<ul class="morning-times times">
+								<li class="time">
+									<a href="#booking-fields" class="scroll" data-speed="500"><span class="time-name">9:45 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">10:00 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">10:15 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">10:30 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">10:45 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">11:00 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">11:15 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">11:30 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">11:45 AM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">12:00 PM</span></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="afternoon-time-slots time-slots">
+						<a class="back" href="#">Back</a>
+						<div class="times-wrapper afternoon">
+						<h3 class="tk-proxima-nova"><i class="fa fa-caret-down"></i>Afternoon</h3>
+							<ul class="afternoon-times times">
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">12:30 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">12:45 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">1:00 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">1:15 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">1:30 PM</span></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="evening-time-slots time-slots">
+						<a class="back" href="#">Back</a>
+						<div class="times-wrapper evening">
+						<h3 class="tk-proxima-nova"><i class="fa fa-caret-down"></i>Evening</h3>
+
+							<ul class="evening-times times">
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">4:45 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">5:00 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">5:15 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">5:30 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">5:45 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">6:00 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">6:15 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">6:30 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">6:45 PM</span></a>
+								</li>
+								<li class="time">
+									<a href="#booking-fields"><span class="time-name">7:00 PM</span></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="timepicker morning-box">
+						<h3 class="tk-proxima-nova"><i class="fa fa-caret-right"></i>Morning</h3>
+
+					</div>
+					<div class="timepicker afternoon-box">
+						<h3 class="tk-proxima-nova"><i class="fa fa-caret-right"></i>Afternoon</h3>
+					</div>
+					<div class="timepicker evening-box">
+						<h3 class="tk-proxima-nova"><i class="fa fa-caret-right"></i></i>Evening</h3>
+
+					</div>
+				</div>
+
+		</form>
+	</section>
+	<script>
+	$('.morning-box').click(function(){
+		$(this).siblings('.morning-time-slots').css("display","block");
+		$(this).css("display","none");
+		$(this).siblings('.timepicker').css("display","none");
+	});
+	</script>
+	<script>
+	$('.afternoon-box').click(function(){
+		$(this).siblings('.afternoon-time-slots').css("display","block");
+		$(this).css("display","none");
+		$(this).siblings('.timepicker').css("display","none");
+	});
+	</script>
+	<script>
+	$('.evening-box').click(function(){
+		$(this).siblings('.evening-time-slots').css("display","block");
+		$(this).css("display","none");
+		$(this).siblings('.timepicker').css("display","none");
+	});
+	</script>
+	<script>
+	$('.back').click(function(){
+		$('.time-slots').css("display","none");
+		$('.timepicker').css("display","block");
+	});
+	</script>
+</body>
