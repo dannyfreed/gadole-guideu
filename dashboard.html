@@ -73,9 +73,9 @@
 		<img class="dashboard-icon" src="assets/dashboard.png" alt="dashboard">
 		<h1 class="tk-proxima-nova dashboard">Dashboard</h1>
 		<div id="sticker" class="quick-links unstick">
-			<a class="tk-proxima-nova" href="#"><div><i class="fa fa-credit-card"></i> Payment Info</div></a>
+			<a data-toggle="modal" data-target="#paymentInfo" class="tk-proxima-nova" href="#"><div><i class="fa fa-credit-card"></i> Payment Info</div></a>
 			<a class="tk-proxima-nova" href="#"><div><i class="fa fa-user"></i> Personal Profile</div></a>
-			<a class="tk-proxima-nova" href="#"><div><i class="fa fa-heart"></i> Refer A Friend</div></a>
+			<a data-toggle="modal" data-target="#refer" class="tk-proxima-nova" href="#"><div><i class="fa fa-heart"></i> Refer A Friend</div></a>
 			<a class="tk-proxima-nova" href="#"><div><i class="fa fa-question-circle"></i> Support Center</div></a>
 		</div>
 
@@ -524,6 +524,109 @@
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 <!-- Modal -->
+
+
+
+	<!-- PAYMENT INFO Modal -->
+<div class="modal fade" id="paymentInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h2 class="tk-proxima-nova modal-title" id="myModalLabel">Almost there...</h2>
+      </div>
+      <div class="modal-body">
+		        <div class="payment-only">
+		        	<form action="#" method="post" class="payment-form">
+			        	<h3 class="tk-proxima-nova">Payment details</h3>
+			                <ul class="cards">
+			                    <li class="visa"></li>
+			                    <li class="amex"></li>
+			                    <li class="mastercard"></li>
+			                    <li class="discover"></li>
+			                </ul>
+			            <div class="tk-proxima-nova form-group">
+			                <label for="card_number">Card number</label>
+			                <input type="name" name="card_number" id="card_number">
+			            </div> 
+		                
+		            	<div class="tk-proxima-nova form-group">
+		                    <label for="expiry_date">Expiry date</label>
+		                    <input type="text" name="expiry_date" id="expiry_date" maxlength="5" placeholder="mm/yy">
+		                </div>
+
+		                <div class="tk-proxima-nova form-group">
+		                    <label for="cvv">CVV</label>
+		                    <input type="text" name="cvv" id="cvv" maxlength="3" placeholder="Card Verification Value">
+		            	</div>
+		            
+		        </div><!--payment-only-->
+
+		</div> <!--modal-body-->
+      <div class="modal-footer">
+	      	<button type="button" class="tk-proxima-nova cancel-transaction" data-dismiss="modal">Cancel</button>
+	       	<a type="submit" data-toggle="modal" data-target="#confirmation" href="#" class="tk-proxima-nova complete-transaction">Save Information</a>
+      </div>
+      </form>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+	<!--credit card script-->
+		<script>
+	$('#card_number').keyup(function(){
+		var card = ($(this).val());
+		var VisaValidator = card.substring(0,1);
+		var MastercardAmexValidator = card.substring(0,2);
+		var DiscoverValidator = card.substring(0,4);
+		if (VisaValidator == "4"){
+			$('.cards > li').addClass('grayed');
+			$('.visa').removeClass('grayed');
+		}
+		if (MastercardAmexValidator == "51" || MastercardAmexValidator == "52" || MastercardAmexValidator == "53" || MastercardAmexValidator == "54" || MastercardAmexValidator == "55"){
+			$('.cards > li').addClass('grayed');
+			$('.mastercard').removeClass('grayed');
+		}
+		if (MastercardAmexValidator == "34" || MastercardAmexValidator == "37"){
+			$('.cards > li').addClass('grayed');
+			$('.amex').removeClass('grayed');
+		}	
+		if (MastercardAmexValidator == "65" || DiscoverValidator == "6011"){
+			$('.cards > li').addClass('grayed');
+			$('.discover').removeClass('grayed');
+		}		
+		if ( $('#card_number').length == 0 ){
+			$('.cards > li').removeClass('grayed');
+		}
+	});
+	</script>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="refer" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 style="text-align:center; display:block" class="tk-proxima-nova modal-title" id="myModalLabel">GuideU Referral Program</h4>
+      </div>
+      <div class="modal-body">	
+		<form class="refer-a-friend">
+			<div class="form-group">
+				<p style="font-weight:400" class="tk-proxima-nova">For each person who signs up after you invite them, you will earn 50 credits</p>
+				<label for="refer" class="tk-proxima-nova">Refer your friends:</label>
+				<input type="email" required name="refer" id="refer-input" class="tk-proxima-nova" placeholder="Enter email address">
+				<button class="submit-refer tk-proxima-nova">Submit</button>
+			</div>
+		</form>			
+	  </div>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 	</body>
 
 	<script>

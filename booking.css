@@ -661,6 +661,8 @@ user-select: none;
 }
 .complete-transaction:hover{
 	background-color:#2BAC5A;
+	color:white;
+	text-decoration: none;
 }
 .cancel-transaction{
 		color: white;
@@ -768,8 +770,60 @@ user-select: none;
 }
 /*end modal*/
 
+/*confirmation modal*/
+#confirmation > .modal-dialog{
+	width:70%;
+}
+.confirm{
+	zoom:1;
+	overflow:hidden;
+	padding-left:1em;
+	padding-right:1em;
+	border-top: 2px solid #5d5d5e;
+}
+.fa-check-circle{
+	color:#3ccd71;
+	margin-right:.5em;
+}
+.what, .where, .when, .additional, .tutor-name{
+	font-size:1.5em;
+	margin-top:1em;
+}
+.price{
+	font-size:2em;
+}
+.price > img{
+	height:32px;
+	margin-right:.5em;
+}
+.tutor{
+	text-align:center;
+}
+.tutor > img{
+	height:250px;
+}
+.tutor > p{
+	color:#5d5d5e;
+}
+.session-subject{
+	color:#5d5d5e;
+}
+.avatar{
+	border-radius:50%;
+	box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.4);
+-webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.4);
+-moz-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.4);
+}
+.fa-money{
+	color:#3ccd71;
+	margin-right:.5em;
+}
 
-
+/*end modal*/
+.modal-body{
+	zoom:1;
+	overflow:hidden;
+}
 
 /*footer*/
 footer{

@@ -666,7 +666,7 @@
 		            	</div>
 					    <div class="modal-footer">
 					      	<button type="button" class="tk-proxima-nova cancel-transaction" data-dismiss="modal">Cancel</button>
-					       	<a type="submit" href="confirmation.html" class="tk-proxima-nova complete-transaction">Complete Transaction</a>
+					       	<a type="submit" data-toggle="modal" data-target="#confirmation" href="#" class="tk-proxima-nova complete-transaction">Complete Transaction</a>
 				     	</div>
 		            </form>
 		        </div><!--payment-only-->
@@ -715,14 +715,43 @@
 		            </form>
 		    	</form>
 		    </div><!--not-logged-in-->
-		</div>
+		</div> <!--modal-body-->
 	<div class="not-logged-in">
       <div class="modal-footer">
         <button type="button" class="tk-proxima-nova cancel-transaction" data-dismiss="modal">Cancel</button>
-        <a type="submit" href="confirmation.html" class="tk-proxima-nova complete-transaction">Complete Transaction</a>
+        <a type="submit" href="#" data-toggle="modal" data-target="#confirmation" class="tk-proxima-nova complete-transaction">Complete Transaction</a>
       </div>
     </div><!--not-logged-in-->
       
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+	<!-- Modal --> 
+<div class="modal fade" id="confirmation" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h2 class="tk-proxima-nova modal-title" id="myModalLabel">Confirmation</h2>
+      </div>
+      <div class="modal-body">
+      	<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+			<p class="tk-proxima-nova what"><i class="fa fa-check-circle fa-lg"></i>What: <span class="session-subject">Econ</span></p>
+			<p class="tk-proxima-nova where"><i class="fa fa-check-circle fa-lg"></i>Where: <span class="session-subject">UGLI</span></p>
+			<p class="tk-proxima-nova when"><i class="fa fa-check-circle fa-lg"></i>When: <span class="session-subject">January 6th, 2014 2:30-3:30 PM</span></p>
+			<p class="tk-proxima-nova additional"><i class="fa fa-check-circle fa-lg"></i>Additional Notes: <span class="session-subject">Please print out additional practice exams if you have any</span></p>
+		</div>
+		<div class="tutor col-xs-12 col-sm-6 col-md-6 col-lg-6">
+			<img class="avatar" src="assets/rottman.png" />
+			<p class="tk-proxima-nova tutor-name">Brandon Rottman</p>
+			<p class="tk-proxima-nova price"><i class="fa fa-money"></i>50/hr</p>
+		</div>
+	  </div>
+      <div class="modal-footer">
+			<p class="tk-proxima-nova">This confirmation has also been emailed to <span class="user-email">Nathan@Gadole.com</span>
+			</p>
+      </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
