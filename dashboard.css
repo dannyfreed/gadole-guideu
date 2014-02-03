@@ -169,11 +169,11 @@ margin-right: 6px;
 	z-index: 99999;
 	display:none;
 }
-.arrow{
+.login-box >  .arrow{
 	width: 13px;
 	height: 6px;
 	position: relative;
-	left: 15px;
+	left: 40px;
 	background: transparent url('assets/arrow.png') no-repeat 0 0;
 }
 .login-flyover{
