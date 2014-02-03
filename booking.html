@@ -673,7 +673,7 @@
 			<div class="not-logged-in">
 				<form action="#" method="post" class="create-account-form">
 				<h3 class="tk-proxima-nova">Create your account</h3>
-					<p class="tk-proxima-nova">Already have an account? <a href="#">Login</a></p>
+					<p class="tk-proxima-nova">Already have an account? <a class="backto-login-button" href="#">Login</a></p>
 					<div class="tk-proxima-nova form-group">
 						<label for="name">Full Name:</label>
 						<input id="name" type="text">
@@ -846,6 +846,12 @@
 		$('.login-prompt').css("display","none");
 		$('.payment-only').css("display","block");
 	});
+	</script>
+	<script>
+		$('.backto-login-button').click(function(){
+			$('.login-prompt').css("display","block");
+			$('.not-logged-in').css("display","none");
+		});
 	</script>
 	<script>
 		$('.create-an-account').click(function(){
