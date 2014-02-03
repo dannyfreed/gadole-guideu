@@ -1158,7 +1158,19 @@ text-align: left;
 .stats{
 	border-top: 1px solid #dadfe1;
 }
-
+.stats > h1{
+	text-align:center;
+	font-size:3.3em;
+}
+.stats > div > h3{
+	text-align:center;
+	color:#5d5d5e;
+}
+.stats > div > p{
+	text-align:center;
+	font-size:6em;
+	color:#5d5d5e;
+}
 
 /*END STATS SECTION*/
 
