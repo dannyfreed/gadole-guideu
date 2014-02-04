@@ -572,6 +572,9 @@ overflow:scroll;
 	zoom:1;
 	overflow:hidden;
 }
+.no-reviews{
+	margin-bottom:2em;
+}
 #reviews > .modal-dialog > .modal-content > .modal-header > .modal-title{
 	text-align:center;
 	font-weight:600;
