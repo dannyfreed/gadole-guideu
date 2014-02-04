@@ -1116,7 +1116,7 @@ text-align: left;
 	text-align:center;
 }
 #review-dialog{
-	width:80%;
+	width:85%;
 }
 .star-rating-holder > .star-rating{
 	width: 120px;
@@ -1133,7 +1133,7 @@ text-align: left;
 .refer-a-friend{
 	text-align:center;
 	font-size:1.3em;
-	padding:2.2em;
+	padding:1.2em;
 	font-weight:300;
 }
 

@@ -1089,10 +1089,13 @@ input[type="radio"]{
       }
 
 /*QUICK LINK POPOVERS*/
+#refer > .modal-dialog{
+	width:717px;
+}
 .refer-a-friend{
 	text-align:center;
 	font-size:1.3em;
-	padding:2.2em;
+	padding:1.2em;
 	font-weight:300;
 }
 
