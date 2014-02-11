@@ -229,6 +229,38 @@ display:block;
     zoom:1;
     padding-bottom:2em;
 }
+.upload-picture{
+	width: 80%;
+	margin-left:auto;
+	margin-right:auto;
+max-width: 256px;
+background-color: #3ccd71;
+color: white;
+padding-bottom: .7em;
+padding-top: .7em;
+display: inline-block;
+margin-bottom: 0;
+font-size: 1.5em;
+font-weight: normal;
+line-height: 1.428571429;
+text-align: center;
+white-space: nowrap;
+vertical-align: middle;
+cursor: pointer;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+-webkit-box-shadow: rgba(0,0,0,0.15) 0px 2px 2px 0px;
+-moz-box-shadow: rgba(0,0,0,0.15) 0px 2px 2px 0px;
+box-shadow: rgba(0,0,0,0.15) 0px 2px 2px 0px;
+}
+.upload-picture:hover{
+	background-color: #2BAC5A;
+color: white;
+text-decoration: none;
+}
 .tutor-pic{
 	text-align: center
 }
