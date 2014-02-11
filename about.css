@@ -222,14 +222,29 @@ section{
 	zoom:1;
 	overflow:hidden;
 }
-
+@media (max-width:400px){
+	.image-container{
+		background-size: auto 100%;
+		-webkit-background-size: auto 100%;
+		-moz-background-size: auto 100%;
+		-o-background-size: auto 100%;
+		background-size: auto 100%;
+		padding-top: 8em;
+	}
+}
+@media (min-width:400px){
+	.image-container{
+		background-size:cover;
+		-webkit-background-size:cover;
+		-moz-background-size:cover;
+		-o-background-size:cover;
+		background-size:cover;
+		padding-top: 8em;
+	}
+}
 .image-container{
 	background-image:url('assets/law-quad.jpg');
 	height:450px;
-	-webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 	padding-top:13em;
