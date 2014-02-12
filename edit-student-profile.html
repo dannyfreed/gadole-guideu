@@ -12,6 +12,7 @@
 <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"> <!--icon typeface-->
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 
 </head>
 
@@ -110,7 +111,7 @@
   </div>
   <div class="panel-footer">
     <h3 style="margin-top:5px" class="tk-proxima-nova">Unhappy?</h3> 
-	<input class="tk-proxima-nova cancel-account" data-confirm="Are you sure?" type="submit" value="Cancel my account">
+	<a class="tk-proxima-nova cancel-account" data-toggle="modal" data-target="#delete-account-modal" href="#">Cancel my account</a>
   </div>
 
 </div>
@@ -130,10 +131,4 @@
 	</span>
 	<span class="footer-actions">
 		<a href="#" class="become-tutor-footer tk-proxima-nova">Become a tutor</a>
-		<a href="#" class="sign-up-footer tk-proxima-nova">Sign up</a>
-	</span>
-</div>
-	<img class="logo" src="assets/logo-bw.png" />
-	<p class="tk-proxima-nova copyright">&copy; 2013, GuideU LLC. All Rights Reserved</p>
-</footer>
-</body>
+		
