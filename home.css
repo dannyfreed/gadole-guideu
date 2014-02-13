@@ -298,6 +298,8 @@ text-transform: uppercase;
 font-size: 11px;
 }
 #signup{
+	color: #72a5e4;
+background: white;
 border-radius: 4px;
 -webkit-border-top-right-radius: 0;
 -moz-border-radius-topright: 0;
