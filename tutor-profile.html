@@ -68,162 +68,170 @@
 	});
 </script>
 	<section class="brief">
-	<div>
-		<div class="tutor-pic col-xs-12 col-sm-5 col-md-5 col-lg-5">
-			<img class="img-responsive" src="assets/rottman-tutor-big.jpg" />
-			<div class="star-rating">
+	<div class="custom-container">
+		<div>
+			<div class="tutor-pic col-xs-12 col-sm-5 col-md-5 col-lg-5">
+				<img class="img-responsive" src="assets/rottman-tutor-big.jpg" />
+				<div class="star-rating">
+					  <input type="radio" value="1"><i></i>
+					  <input type="radio" value="2"><i></i>
+					  <input type="radio" value="3"><i></i>
+					  <input checked type="radio" value="4"><i></i>
+					  <input type="radio" value="5"><i></i>
+				</div>
+				<div class="read-reviews">
+					<a href="#reviews" class="scroll tk-proxima-nova read-reviews"><i class="fa fa-comments"></i>Reviews</a>
+				</div>
+				<div class="action-buttons">
+					<a href="booking.html" class="tk-proxima-nova book-session">Book</a>
+					<a href="#" class="tk-proxima-nova send-message">Message</a>
+				</div>
+			</div>
+			<div id="details" class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
+				<h1 class="tk-proxima-nova tutor-name">Brandon Rottman</h1>
+				<div class="short-blurb">
+					<p class="tk-proxima-nova credentials-bio">Engineer who loves teaching, 
+					University of Michigan School of Engineering 2015, Honors 2012, 2013 (15 WORDS MAXIMUM)</p>
+				</div>
+				<div class="clock"><img class="detail-icon" src="assets/education-icon.png" /><p class="tk-proxima-nova detail"> University of Michigan</p></div>
+				<div class="education"><img class="detail-icon" src="assets/degree-icon.png" /><p class="tk-proxima-nova detail"> Biomedical Engineering</p></div>
+				<div class="price"><img class="detail-icon" src="assets/dollar-icon.png" /><p class="tk-proxima-nova detail"> 20/hr</p></div>
+				<div class="response-time"><img class="detail-icon" src="assets/clock-icon.png" /><p class="tk-proxima-nova detail">Response Time: 24 hours during the week, 48 hours on weekends</p></div>
+					
+			</div>
+		</div>
+	</div><!--custom-container-->
+	</section>
+	<section class="bio">
+		<div class="custom-container">
+			<div class="top-bio">
+					<h1 class="tk-proxima-nova"><span class="bio-title">Biography</span></h1>
+
+			</div>
+			<!--<hr width="100%" align="LEFT" style="border-top:1px dotted black">-->
+			<p class="tk-proxima-nova bio-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div><!--custom-container-->
+	</section>
+
+	<section class="courses-tutored">
+		<div class="custom-container">
+			<h1 class="tk-proxima-nova">Courses Tutored</h1>
+			<div class="courses-tutored-holder col-xs-12 col-sm-4 col-md-4 col-lg-4">
+				<div class="subject math">
+					<h2 class="tk-proxima-nova">Math</h2>
+					<div class="tk-proxima-nova course-numbers">
+						<a href="booking.html"><span class="badge">115</span></a><a href="booking.html"><span class="badge">116</span></a><a href="booking.html"><span class="badge">165</span></a><a href="booking.html"><span class="badge">475</span></a>
+					</div>
+				</div>
+			</div>
+			<div class="courses-tutored-holder col-xs-12 col-sm-4 col-md-4 col-lg-4">
+				<div class="subject spanish">
+					<h2 class="tk-proxima-nova">Spanish</h2>
+					<div class="tk-proxima-nova course-numbers">
+						<a href="booking.html"><span class="badge">101</span></a><a href="booking.html"><span class="badge">102</span></a><a href="booking.html"><span class="badge">201</span></a><a href="booking.html"><span class="badge">115</span></a><a href="booking.html"><span class="badge">202</span></a><a href="booking.html"><span class="badge">315</span></a><a href="booking.html"><span class="badge">316</span></a><a href="booking.html"><span class="badge">380</span></a><a href="booking.html"><span class="badge">395</span></a><a href="booking.html"><span class="badge">401</span></a>
+					</div>
+				</div>
+			</div>
+			<div class="courses-tutored-holder col-xs-12 col-sm-4 col-md-4 col-lg-4">
+				<div class="subject econ">
+					<h2 class="tk-proxima-nova">Economics</h2>
+					<div class="tk-proxima-nova course-numbers">
+						<a href="booking.html"><span class="badge">101</span></a><a href="booking.html"><span class="badge">102</span></a><a href="booking.html"><span class="badge">401</span></a><a href="booking.html"><span class="badge">115</span></a><a href="booking.html"><span class="badge">402</span></a><a href="booking.html"><span class="badge">415</span></a>
+					</div>
+				</div>
+			</div>
+		</div><!--custom-container-->
+	</section>
+	<section class="jagged-divider">
+	</section>
+	<section id="reviews" class="reviews">
+		<div class="custom-container">
+			<h1 class="tk-proxima-nova">Reviews</h1>
+			<div class="average">
+				<p>4.0</p><!--print average rating variable here-->
+				<div class="star-rating ">
 				  <input type="radio" value="1"><i></i>
 				  <input type="radio" value="2"><i></i>
 				  <input type="radio" value="3"><i></i>
 				  <input checked type="radio" value="4"><i></i>
 				  <input type="radio" value="5"><i></i>
-			</div>
-			<div class="read-reviews">
-				<a href="#reviews" class="scroll tk-proxima-nova read-reviews"><i class="fa fa-comments"></i>Reviews</a>
-			</div>
-			<div class="action-buttons">
-				<a href="booking.html" class="tk-proxima-nova book-session">Book</a>
-				<a href="#" class="tk-proxima-nova send-message">Message</a>
-			</div>
-		</div>
-		<div id="details" class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
-			<h1 class="tk-proxima-nova tutor-name">Brandon Rottman</h1>
-			<div class="short-blurb">
-				<p class="tk-proxima-nova credentials-bio">Engineer who loves teaching, 
-				University of Michigan School of Engineering 2015, Honors 2012, 2013 (15 WORDS MAXIMUM)</p>
-			</div>
-			<div class="clock"><img class="detail-icon" src="assets/education-icon.png" /><p class="tk-proxima-nova detail"> University of Michigan</p></div>
-			<div class="education"><img class="detail-icon" src="assets/degree-icon.png" /><p class="tk-proxima-nova detail"> Biomedical Engineering</p></div>
-			<div class="price"><img class="detail-icon" src="assets/dollar-icon.png" /><p class="tk-proxima-nova detail"> 20/hr</p></div>
-			<div class="response-time"><img class="detail-icon" src="assets/clock-icon.png" /><p class="tk-proxima-nova detail">Response Time: 24 hours during the week, 48 hours on weekends</p></div>
-				
-		</div>
-	</div>
-	</section>
-	<section class="bio">
-		<div class="top-bio">
-				<h1 class="tk-proxima-nova"><span class="bio-title">Biography</span></h1>
-
-		</div>
-		<!--<hr width="100%" align="LEFT" style="border-top:1px dotted black">-->
-		<p class="tk-proxima-nova bio-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-	</section>
-
-	<section class="courses-tutored">
-		<h1 class="tk-proxima-nova">Courses Tutored</h1>
-		<div class="courses-tutored-holder col-xs-12 col-sm-4 col-md-4 col-lg-4">
-			<div class="subject math">
-				<h2 class="tk-proxima-nova">Math</h2>
-				<div class="tk-proxima-nova course-numbers">
-					<a href="booking.html"><span class="badge">115</span></a><a href="booking.html"><span class="badge">116</span></a><a href="booking.html"><span class="badge">165</span></a><a href="booking.html"><span class="badge">475</span></a>
 				</div>
 			</div>
-		</div>
-		<div class="courses-tutored-holder col-xs-12 col-sm-4 col-md-4 col-lg-4">
-			<div class="subject spanish">
-				<h2 class="tk-proxima-nova">Spanish</h2>
-				<div class="tk-proxima-nova course-numbers">
-					<a href="booking.html"><span class="badge">101</span></a><a href="booking.html"><span class="badge">102</span></a><a href="booking.html"><span class="badge">201</span></a><a href="booking.html"><span class="badge">115</span></a><a href="booking.html"><span class="badge">202</span></a><a href="booking.html"><span class="badge">315</span></a><a href="booking.html"><span class="badge">316</span></a><a href="booking.html"><span class="badge">380</span></a><a href="booking.html"><span class="badge">395</span></a><a href="booking.html"><span class="badge">401</span></a>
-				</div>
+			<div class="review col-xs-12 col-sm-6 col-md-6 col-lg-6">
+				<img class="avatar" src="assets/danno.png">
+				<p class="tk-proxima-nova small-type">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <span class="reviewer"><em> -John Doe</em></span>
+					<br />
+					<span class="tk-proxima-nova helpfulness rating">Helpfulness: <span><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle-o"></i></span>
+		  			</span>
+		  			<br />
+		  			<span class="tk-proxima-nova clarity rating">Clarity: <span><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i></span>
+		  			</span>
+		  			<br />
+		  			<span class="tk-proxima-nova interest rating">Interest: <span><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i></span>
+		  			</span>
+		  			<br />
+		  			<span class="tk-proxima-nova professionalism rating">Professionalism: <span><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i></span>
+		  			</span>
+		  		</p>
 			</div>
-		</div>
-		<div class="courses-tutored-holder col-xs-12 col-sm-4 col-md-4 col-lg-4">
-			<div class="subject econ">
-				<h2 class="tk-proxima-nova">Economics</h2>
-				<div class="tk-proxima-nova course-numbers">
-					<a href="booking.html"><span class="badge">101</span></a><a href="booking.html"><span class="badge">102</span></a><a href="booking.html"><span class="badge">401</span></a><a href="booking.html"><span class="badge">115</span></a><a href="booking.html"><span class="badge">402</span></a><a href="booking.html"><span class="badge">415</span></a>
-				</div>
+			<div class="review col-xs-12 col-sm-6 col-md-6 col-lg-6">
+				<img class="avatar" src="assets/danno.png">
+				<p class="tk-proxima-nova small-type">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <span class="reviewer"><em> -John Doe</em></span>
+					<br />
+					<span class="tk-proxima-nova helpfulness rating">Helpfulness: <span><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle-o"></i></span>
+		  			</span>
+		  			<br />
+		  			<span class="tk-proxima-nova clarity rating">Clarity: <span><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i></span>
+		  			</span>
+		  			<br />
+		  			<span class="tk-proxima-nova interest rating">Interest: <span><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i></span>
+		  			</span>
+		  			<br />
+		  			<span class="tk-proxima-nova professionalism rating">Professionalism: <span><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i></span>
+		  			</span>
+		  		</p>
 			</div>
-		</div>
-	</section>
-	<section class="jagged-divider">
-	</section>
-	<section id="reviews" class="reviews">
-		<h1 class="tk-proxima-nova">Reviews</h1>
-		<div class="average">
-			<p>4.0</p><!--print average rating variable here-->
-			<div class="star-rating ">
-			  <input type="radio" value="1"><i></i>
-			  <input type="radio" value="2"><i></i>
-			  <input type="radio" value="3"><i></i>
-			  <input checked type="radio" value="4"><i></i>
-			  <input type="radio" value="5"><i></i>
+			<div class="review col-xs-12 col-sm-6 col-md-6 col-lg-6">
+				<img class="avatar" src="assets/danno.png">
+				<p class="tk-proxima-nova small-type">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <span class="reviewer"><em> -John Doe</em></span>
+					<br />
+					<span class="tk-proxima-nova helpfulness rating">Helpfulness: <span><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle-o"></i></span>
+		  			</span>
+		  			<br />
+		  			<span class="tk-proxima-nova clarity rating">Clarity: <span><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i></span>
+		  			</span>
+		  			<br />
+		  			<span class="tk-proxima-nova interest rating">Interest: <span><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i></span>
+		  			</span>
+		  			<br />
+		  			<span class="tk-proxima-nova professionalism rating">Professionalism: <span><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i></span>
+		  			</span>
+		  		</p>
 			</div>
-		</div>
-		<div class="review col-xs-12 col-sm-6 col-md-6 col-lg-6">
-			<img class="avatar" src="assets/danno.png">
-			<p class="tk-proxima-nova small-type">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <span class="reviewer"><em> -John Doe</em></span>
-				<br />
-				<span class="tk-proxima-nova helpfulness rating">Helpfulness: <span><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle-o"></i></span>
-	  			</span>
-	  			<br />
-	  			<span class="tk-proxima-nova clarity rating">Clarity: <span><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i></span>
-	  			</span>
-	  			<br />
-	  			<span class="tk-proxima-nova interest rating">Interest: <span><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i></span>
-	  			</span>
-	  			<br />
-	  			<span class="tk-proxima-nova professionalism rating">Professionalism: <span><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i></span>
-	  			</span>
-	  		</p>
-		</div>
-		<div class="review col-xs-12 col-sm-6 col-md-6 col-lg-6">
-			<img class="avatar" src="assets/danno.png">
-			<p class="tk-proxima-nova small-type">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <span class="reviewer"><em> -John Doe</em></span>
-				<br />
-				<span class="tk-proxima-nova helpfulness rating">Helpfulness: <span><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle-o"></i></span>
-	  			</span>
-	  			<br />
-	  			<span class="tk-proxima-nova clarity rating">Clarity: <span><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i></span>
-	  			</span>
-	  			<br />
-	  			<span class="tk-proxima-nova interest rating">Interest: <span><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i></span>
-	  			</span>
-	  			<br />
-	  			<span class="tk-proxima-nova professionalism rating">Professionalism: <span><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i></span>
-	  			</span>
-	  		</p>
-		</div>
-		<div class="review col-xs-12 col-sm-6 col-md-6 col-lg-6">
-			<img class="avatar" src="assets/danno.png">
-			<p class="tk-proxima-nova small-type">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <span class="reviewer"><em> -John Doe</em></span>
-				<br />
-				<span class="tk-proxima-nova helpfulness rating">Helpfulness: <span><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle-o"></i></span>
-	  			</span>
-	  			<br />
-	  			<span class="tk-proxima-nova clarity rating">Clarity: <span><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i></span>
-	  			</span>
-	  			<br />
-	  			<span class="tk-proxima-nova interest rating">Interest: <span><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i></span>
-	  			</span>
-	  			<br />
-	  			<span class="tk-proxima-nova professionalism rating">Professionalism: <span><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i></span>
-	  			</span>
-	  		</p>
-		</div>
-		<div class="review col-xs-12 col-sm-6 col-md-6 col-lg-6">
-			<img class="avatar" src="assets/danno.png">
-			<p class="tk-proxima-nova small-type">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <span class="reviewer"><em> -John Doe</em></span>
-				<br />
-				<span class="tk-proxima-nova helpfulness rating">Helpfulness: <span><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle-o"></i></span>
-	  			</span>
-	  			<br />
-	  			<span class="tk-proxima-nova clarity rating">Clarity: <span><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i></span>
-	  			</span>
-	  			<br />
-	  			<span class="tk-proxima-nova interest rating">Interest: <span><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i></span>
-	  			</span>
-	  			<br />
-	  			<span class="tk-proxima-nova professionalism rating">Professionalism: <span><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i></span>
-	  			</span>
-	  		</p>
-		</div>
-<a href="#" class="view-all tk-proxima-nova">View All (7)</a> <!--total # of reviews variable-->
-
+			<div class="review col-xs-12 col-sm-6 col-md-6 col-lg-6">
+				<img class="avatar" src="assets/danno.png">
+				<p class="tk-proxima-nova small-type">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <span class="reviewer"><em> -John Doe</em></span>
+					<br />
+					<span class="tk-proxima-nova helpfulness rating">Helpfulness: <span><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle-o"></i></span>
+		  			</span>
+		  			<br />
+		  			<span class="tk-proxima-nova clarity rating">Clarity: <span><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i></span>
+		  			</span>
+		  			<br />
+		  			<span class="tk-proxima-nova interest rating">Interest: <span><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i></span>
+		  			</span>
+		  			<br />
+		  			<span class="tk-proxima-nova professionalism rating">Professionalism: <span><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i></span>
+		  			</span>
+		  		</p>
+			</div>
+	<a href="#" class="view-all tk-proxima-nova">View All (7)</a> <!--total # of reviews variable-->
+	
+	</div><!--custom-container-->
 
 	</section>
 <footer>
