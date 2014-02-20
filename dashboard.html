@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="dashboard.css" type="text/css" />
 <link rel="stylesheet" href="bootstrap.css" type="text/css" />
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=0.7">
 
 <script type="text/javascript" src="//use.typekit.net/xfb1bml.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
@@ -74,7 +74,7 @@
 		<h1 class="tk-proxima-nova dashboard">Dashboard</h1>
 		<div id="sticker" class="quick-links unstick">
 			<a data-toggle="modal" data-target="#paymentInfo" class="tk-proxima-nova" href="#"><div><i class="fa fa-credit-card"></i> Payment Info</div></a>
-			<a class="tk-proxima-nova" href="#"><div><i class="fa fa-user"></i> Personal Profile</div></a>
+			<a data-toggle="modal" data-target="#firstTimeUser" class="tk-proxima-nova" href="#"><div><i class="fa fa-user"></i> Personal Profile</div></a>
 			<a data-toggle="modal" data-target="#refer" class="tk-proxima-nova" href="#"><div><i class="fa fa-heart"></i> Refer A Friend</div></a>
 			<a data-toggle="modal" data-target="#sendMessage" class="tk-proxima-nova" href="#"><div><i class="fa fa-question-circle"></i> Support Center</div></a>
 		</div>
@@ -525,6 +525,68 @@
 </div><!-- /.modal -->
 <!-- Modal -->
 
+<!--FIRST TIME USER MODAL-->
+<div class="modal fade" id="firstTimeUser" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div style="text-align:center" class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h2 class="tk-proxima-nova modal-title" id="myModalLabel">Welcome to GuideU</h2>
+      </div>
+      <div class="modal-body">
+	    	<h4 class="tk-proxima-nova">This is your dashboard, also known as home base. Here, you can see upcoming and past sessions, keep track of your favorite tutors, book a new session, and edit your account. Let's get started by adding some character to your profile.</h4>
+			        	
+		</div> <!--modal-body-->
+      <div class="modal-footer">
+	       	<a data-toggle="modal" data-target="#confirmation" href="edit.html" class="tk-proxima-nova complete-transaction">Continue</a>
+      </div>
+      
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!--FIRST TIME USER MODAL-->
+<div class="modal fade" id="messageModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div style="background:#f1f1f1; border-top-left-radius:6px; border-top-right-radius:6px; border-bottom:3px solid #c1bdbd; text-align:center" class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h2 style="font-weight:600; color:#5d5d5e;" class="tk-proxima-nova" id="myModalLabel">Message with Brandon Rottman</h2>
+      </div>
+      <div style="background:#f1f1f1; padding-left:0px !important; padding-right:0px !important;" class="modal-body">
+	    	<div class="tk-proxima-nova message-holder">
+	    		<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+		    		<div style="background-image:url('assets/rottman-tutor.jpg'); background-size:cover; height:65px; width:65px;" class="thumb-container">
+		    		</div>
+		    	</div>
+		    	<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+		    		<p style="color:#113785; font-weight:600; margin:0; position:relative; top: -2px; display:inline-block" class="message-username">Brandon Rottman<i style="color:#058c05; margin-left:5px; display:none" class="fa fa-circle"></i></p>
+		    		<p class="message-date">10:11pm 2/5/2014</p>
+	    			<p class="message-text">Hey, my name is brandon and i'm gonna be your tutor this afternoon. Please bring your books and your face and your pencils and your helmet and your money to the UGLI so we can meet. </p>
+	    		</div>
+	    	</div>
+	    	<div class="tk-proxima-nova message-holder">
+	    		<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+		    		<div style="background-image:url('http://www.gadole.com/assets/varn.jpg'); background-size:cover; height:65px; width:65px;" class="thumb-container">
+		    		</div>
+		    	</div>
+		    	<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+		    		<p style="color:#113785; font-weight:600; margin:0; position:relative; top: -2px; display:inline-block" class="message-username">Nathan Pilcowitz<i style="color:#058c05; margin-left:5px;" class="fa fa-circle"></i></p>
+		    		<p class="message-date">10:13pm 2/5/2014</p>
+	    			<p class="message-text">Hey brandon, thanks for reaching out, I really appreciate that. I am looking forward to meeting you at the ugli.</p>
+	    		</div>
+	    	</div>
+			        	
+		</div> <!--modal-body-->
+      <div style="margin:0; padding-top:0; padding-left:0; padding-right:0; padding-bottom:5px" class="tk-proxima-nova modal-footer">
+	       	<textarea class="message-reply" placeholder="Write a reply..."></textarea>
+	       	<button class="message-send" type="submit">Send Message</button>
+      </div>
+      
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
 
 	<!-- SEND MESSAGE - EMAIL Modal -->
 <div class="modal fade" id="sendMessage" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -570,6 +632,8 @@
       </div>
       <div class="modal-body">
 		        <div class="payment-only">
+		        <p class="tk-proxima-nova about-payments">GuideU is powered by Balanced Payments to provide an easy and secure payment solution. Balanced safely and securely maintains all account information without GuideU ever even having access to your sensitive payment information. Please be sure to double-check all payment information before submitting your form in order to avoid any errors or payments complications.
+</p>
 		        	<form action="#" method="post" class="payment-form">
 			        	<h3 class="tk-proxima-nova">Payment details</h3>
 			                <ul class="cards">
@@ -815,5 +879,11 @@ $(document).ready(function() {
 		}
 	});
 	//alert(stickermax); //uncomment to show max sticker postition value on doc.ready
+});
+</script>
+
+<script>
+$( document ).ready(function() {
+	$('#messageModal').modal('show');
 });
 </script>

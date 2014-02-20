@@ -1230,8 +1230,67 @@ user-select: none;
 	text-align:center;
 }
 
-
-
+/*message-modal-history*/
+.message-holder{
+	zoom: 1;
+	overflow: hidden;
+	margin-bottom: 10px;
+	padding-bottom: 5px;
+}
+.message-username{
+	color:#113785; 
+	font-weight:600; 
+	margin:0; 
+	position:relative; 
+	top: -2px; 
+	display:inline-block
+}
+.message-date{
+	display:inline-block; 
+	float:right; 
+	margin:0; 
+	font-size: .8em; 
+	font-weight:300; 
+	color:#5d5d5e;
+}
+.message-reply{
+	width:100%;
+	resize:none;
+	border: 1px solid rgb(238, 238, 238);
+	height:80px;
+	padding-left:10px;
+	padding-top:10px;
+	border-top:0;
+}
+.message-send{
+display: inline-block;
+text-align: center;
+white-space: nowrap;
+vertical-align: middle;
+cursor: pointer;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+background-color: #3ccd71;
+color: white;
+line-height: 1.33;
+border-radius: 6px;
+z-index: 9999;
+border: 0;
+padding-top: 7px;
+padding-bottom: 7px;
+padding-left: 10px;
+padding-right: 10px;
+float:right;
+margin-right:5px;
+margin-top:5px;
+}
+.message-send:hover{
+	color: white;
+background-color: #2BAC5A;
+text-decoration: none;
+}
 /*footer*/
 footer{
 	padding-top:3em;
